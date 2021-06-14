@@ -23,6 +23,7 @@ import net.sourceforge.jabm.SimulationController;
 import net.sourceforge.jabm.agent.Agent;
 import net.sourceforge.jabm.agent.AgentList;
 import net.sourceforge.jabm.event.AgentArrivalEvent;
+import net.sourceforge.jabm.event.EventListener;
 import cern.jet.random.engine.RandomEngine;
 
 /**
@@ -113,7 +114,8 @@ public class SelectionRandomRobinBuyerMixer extends AbstractMarketMixer
 				if(selectedSellers.size()>0){
 					AgentArrivalEvent event = 
 							new AgentArrivalEvent(model, buyer, selectedSellers);
-					model.fireEvent(event);
+					EventListener listener = (EventListener) buyer;
+					listener.eventOccurred(event);
 				}
 			}
 		}
