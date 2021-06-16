@@ -58,7 +58,13 @@ public class AverageCreditInterestRateComputer implements MacroVariableComputer 
 				}		
 			}
 		}
-		return avInterests/newLoans;
+		double avLoanInterestRate;
+		if(newLoans == 0) {
+			avLoanInterestRate=0;
+		}else {
+			avLoanInterestRate=avInterests/newLoans;
+		}
+		return avLoanInterestRate;
 	}
 
 	/**
