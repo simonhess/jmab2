@@ -23,5 +23,6 @@ public interface DividendsStrategy extends SingleStrategy {
 
 	public void payDividends();
 	public double getProfitShare ();
+	public void setProfitShare(double profitShare);
 	
 }
