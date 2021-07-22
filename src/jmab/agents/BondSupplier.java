@@ -28,6 +28,6 @@ public interface BondSupplier extends MacroAgent {
 	
 	public double getBondInterestRate();
 	
-	public int getBondSupply();
+	public long getBondSupply();
 
 }

@@ -22,6 +22,6 @@ import jmab.agents.BondSupplier;
  */
 public interface BondDemandStrategy extends SingleStrategy {
 	
-	public int bondDemand(BondSupplier supplier);
+	public long bondDemand(BondSupplier supplier);
 
 }

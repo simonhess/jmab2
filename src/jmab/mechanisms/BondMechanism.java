@@ -64,8 +64,8 @@ public class BondMechanism extends AbstractMechanism implements Mechanism {
 			double price=bondsIssued.getPrice();
 			double interestRate=bondsIssued.getInterestRate();
 			int maturity=bondsIssued.getMaturity();
-			int bondsDemanded=buyer.getBondsDemand(price, issuer);
-			int quantity=Math.min(bondsDemanded, (int) bondsIssued.getQuantity());
+			long bondsDemanded=buyer.getBondsDemand(price, issuer);
+			long quantity=Math.min(bondsDemanded, (long) bondsIssued.getQuantity());
 			if (bondsDemanded==quantity){
 				buyer.setActive(false, idMarket);
 			}

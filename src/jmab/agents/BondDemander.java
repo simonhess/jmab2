@@ -28,7 +28,7 @@ public interface BondDemander extends MacroAgent {
 	 * @param issuer 
 	 * @return
 	 */
-	int getBondsDemand(double price, BondSupplier issuer);
+	long getBondsDemand(double price, BondSupplier issuer);
 
 	/**
 	 * @param idBondSM
