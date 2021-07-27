@@ -88,7 +88,7 @@ public class BondMechanism extends AbstractMechanism implements Mechanism {
 			//4. If not enough money was raised
 			if (targetStock.getValue()<totalAmount){
 				//Then the good demander is deactivated and quantities and total costs are updated accordingly
-				quantity= (int) Math.floor(targetStock.getValue()/price);
+				quantity= (long) Math.floor(targetStock.getValue()/price);
 				totalAmount=quantity*price;
 				buyer.setActive(false, idMarket);
 			}
