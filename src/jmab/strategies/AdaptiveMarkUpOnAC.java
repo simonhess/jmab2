@@ -53,9 +53,9 @@ MarkupPricingStrategy {
 		double price = seller.getPrice();
 		double previousLowerBound=price/(1+markUp);
 		if(referenceVariable>threshold){
-			markUp-=(adaptiveParameter*markUp*distribution.nextDouble());
+			markUp-=(adaptiveParameter*distribution.nextDouble());
 		}else{
-			markUp+=(adaptiveParameter*markUp*distribution.nextDouble());
+			markUp+=(adaptiveParameter*distribution.nextDouble());
 
 		}
 		if (seller.getPriceLowerBound()!=0){
