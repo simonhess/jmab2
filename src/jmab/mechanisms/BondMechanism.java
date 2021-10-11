@@ -16,6 +16,7 @@ package jmab.mechanisms;
 
 import java.util.List;
 
+import jmab.agents.AbstractBank;
 import jmab.agents.BondDemander;
 import jmab.agents.BondSupplier;
 import jmab.agents.LiabilitySupplier;
@@ -86,7 +87,7 @@ public class BondMechanism extends AbstractMechanism implements Mechanism {
 			//3. Re-allocation of funds from paying stocks towards the targetStock
 			this.reallocateLiquidity(totalAmount, payingStocks, targetStock);
 			//4. If not enough money was raised
-			if (targetStock.getValue()<totalAmount){
+			if (targetStock.getValue()<totalAmount&&(buyer instanceof AbstractBank)==false){
 				//Then the good demander is deactivated and quantities and total costs are updated accordingly
 				quantity= (long) Math.floor(targetStock.getValue()/price);
 				totalAmount=quantity*price;
