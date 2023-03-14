@@ -16,6 +16,7 @@ package jmab.mechanisms;
 
 import java.util.List;
 
+import jmab.agents.BondSupplier;
 import jmab.agents.GoodDemander;
 import jmab.agents.GoodSupplier;
 import jmab.agents.LiabilitySupplier;
@@ -82,7 +83,7 @@ public class AtOnceMechanism extends AbstractGoodMechanism implements
 //			System.out.println(targetStock.getValue());
 //		}
 		//4. If not enough money was raised
-		if(targetStock.getValue()<totalAmount){
+		if(targetStock.getValue()<totalAmount&&(goodDemander instanceof BondSupplier)==false){
 			//Then the good demander is deactivated and quantities and total costs are updated accordingly
 			goodDemander.setActive(false, idGood);
 			quantity=Math.floor(targetStock.getValue()/price);
