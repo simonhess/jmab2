@@ -23,4 +23,6 @@ public interface MarkupPricingStrategy extends PricingStrategy {
 
 	public double getMarkUp();
 	
+	public void setMarkUp(double markUp);
+	
 }
