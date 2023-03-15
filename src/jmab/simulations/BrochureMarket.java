@@ -25,12 +25,18 @@ import jmab.population.MarketPopulation;
 public class BrochureMarket extends AbstractTwoStepMarketSimulation
 		implements TwoStepMarketSimulation {
 
+	protected int nbRuns;
 	/* (non-Javadoc)
 	 * @see jmab.simulations.AbstractTwoStepMarketSimulation#secondSteo()
 	 */
 	@Override
 	public void secondStep() {
-		super.invokeSecondAgentInteractions();
+		//while(!this.mixer.closed(population, simulation)){
+	//		super.invokeSecondAgentInteractions();
+		//}
+			for(int i=0;i<this.nbRuns&&!this.mixer.closed(population, simulation);i++){
+				super.invokeSecondAgentInteractions();
+			}
 	}
 
 	/* (non-Javadoc)
@@ -39,6 +45,20 @@ public class BrochureMarket extends AbstractTwoStepMarketSimulation
 	@Override
 	public void firstStep() {
 		super.invokeFirstAgentInteractions();
+	}
+	
+	/**
+	 * @return the nbRuns
+	 */
+	public int getNbRuns() {
+		return nbRuns;
+	}
+
+	/**
+	 * @param nbRuns the nbRuns to set
+	 */
+	public void setNbRuns(int nbRuns) {
+		this.nbRuns = nbRuns;
 	}
 
 	/* (non-Javadoc)

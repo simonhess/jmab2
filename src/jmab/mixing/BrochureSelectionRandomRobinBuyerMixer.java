@@ -23,6 +23,7 @@ import net.sourceforge.jabm.SimulationController;
 import net.sourceforge.jabm.agent.Agent;
 import net.sourceforge.jabm.agent.AgentList;
 import net.sourceforge.jabm.event.AgentArrivalEvent;
+import net.sourceforge.jabm.event.EventListener;
 import cern.jet.random.engine.RandomEngine;
 
 /**
@@ -66,16 +67,44 @@ public class BrochureSelectionRandomRobinBuyerMixer extends AbstractTwoStepMarke
 		}
 	}
 
-	private void invokeSecondInteractions(AgentList buyers, SimulationController model) {
+	private void invokeSecondInteractions(AgentList buyers, AgentList sellers, SimulationController model) {
 		int marketId=((MacroSimulation)model.getSimulation()).getActiveMarketId();
 		buyers.shuffle(prng);
 		for (Agent buyer : buyers.getAgents()) {
+			
+			// Interact with selected sellers from first interaction
+			
 			if(((MacroAgent)buyer).isActive(marketId)){
 				AgentArrivalEvent event = 
 						new AgentArrivalEvent (model, (Agent)buyer, null);
 				model.fireEvent(event);
 			}
+			
+			// Interact on the market again if the buyer is still active. Select further sellers.
+			
+			MacroAgent b = (MacroAgent)buyer;
+			if(b.isActive(marketId)){
+				sellers.shuffle(prng);
+				ArrayList<Agent> allSellers = (ArrayList<Agent>) sellers.getAgents();
+				ArrayList<Agent> selectedSellers = new ArrayList<Agent>();
+				int nbSelectedSellers=0;
+				for(int i=0;i<allSellers.size()&&nbSelectedSellers<nbSellers;i++){
+					MacroAgent seller = (MacroAgent)allSellers.get(i);
+					if(seller.isActive(marketId)){
+						selectedSellers.add(seller);
+						nbSelectedSellers++;
+					}
+				}
+				if(selectedSellers.size()>0){
+					AgentArrivalEvent event = 
+							new AgentArrivalEvent(model, buyer, selectedSellers);
+					EventListener listener = (EventListener) buyer;
+					listener.eventOccurred(event);
+				}
+			}
+			
 		}
+		
 	}
 	
 	/**
@@ -119,7 +148,7 @@ public class BrochureSelectionRandomRobinBuyerMixer extends AbstractTwoStepMarke
 	@Override
 	public void invokeSecondAgentInteractions(MarketPopulation population,
 			SimulationController simulation) {
-		this.invokeSecondInteractions(population.getBuyers(), simulation);
+		this.invokeSecondInteractions(population.getBuyers(), population.getSellers(), simulation);
 	}
 
 }
