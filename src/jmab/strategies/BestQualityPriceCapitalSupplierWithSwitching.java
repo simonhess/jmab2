@@ -42,6 +42,7 @@ public class BestQualityPriceCapitalSupplierWithSwitching extends AbstractStrate
 	private int wagesExpectationsId; // this should be set through the config file equal to key of Wages in StaticValue
 	private AbstractFirm previousSupplier; 
 	private SwitchingStrategy strategy;
+	private boolean switched;
 	
 	/**
 	 * @return the productionStockId
@@ -114,6 +115,7 @@ public class BestQualityPriceCapitalSupplierWithSwitching extends AbstractStrate
 	public MacroAgent selectGoodSupplier(ArrayList<Agent> sellers,
 			double demand, boolean real) {
 		double maxAttractiveness=Double.NEGATIVE_INFINITY;
+		switched = false;
 		AbstractFirm bestSupplier=(AbstractFirm) sellers.get(0);
 		SimpleAbstractAgent buyer=(SimpleAbstractAgent)this.getAgent();
 		double expectedWages= buyer.getExpectation(wagesExpectationsId).getExpectation();
@@ -139,6 +141,7 @@ public class BestQualityPriceCapitalSupplierWithSwitching extends AbstractStrate
 		if(previousAttractiveness<maxAttractiveness){
 			if(previousAttractiveness==Double.NEGATIVE_INFINITY||strategy.switches(previousAttractiveness,maxAttractiveness)){
 				previousSupplier=bestSupplier;
+				switched = true;
 			}
 		}
 		return previousSupplier;
@@ -213,6 +216,16 @@ public class BestQualityPriceCapitalSupplierWithSwitching extends AbstractStrate
 				break;
 			}
 		}
+	}
+
+
+	public boolean isSwitched() {
+		return switched;
+	}
+
+
+	public void setSwitched(boolean switched) {
+		this.switched = switched;
 	}
 
 }

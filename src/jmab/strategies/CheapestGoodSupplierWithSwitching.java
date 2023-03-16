@@ -40,6 +40,7 @@ public class CheapestGoodSupplierWithSwitching extends AbstractStrategy implemen
 
 	private GoodSupplier previousGoodSupplier;
 	private SwitchingStrategy strategy;
+	public boolean switched;
 	
 	/**
 	 * 
@@ -99,6 +100,7 @@ public class CheapestGoodSupplierWithSwitching extends AbstractStrategy implemen
 	 */
 	@Override
 	public MacroAgent selectGoodSupplier(ArrayList<Agent> goodSuppliers, double demand, boolean real) {
+		this.switched=false;
 		double minPrice=Double.POSITIVE_INFINITY;
 		GoodSupplier minGoodSupplier=(GoodSupplier) goodSuppliers.get(0);
 		GoodDemander goodDemander = (GoodDemander) getAgent();
@@ -120,6 +122,7 @@ public class CheapestGoodSupplierWithSwitching extends AbstractStrategy implemen
 		if(previousPrice>minPrice){
 			if(previousPrice==Double.POSITIVE_INFINITY||strategy.switches(previousPrice,minPrice)){
 				previousGoodSupplier=minGoodSupplier;
+				this.switched=true;
 			}
 		}
 		return previousGoodSupplier;
@@ -139,6 +142,7 @@ public class CheapestGoodSupplierWithSwitching extends AbstractStrategy implemen
 	@Override
 	public List<MacroAgent> selectMultipleGoodSupplier(
 			ArrayList<Agent> sellers, double demand, boolean real) {
+		this.switched=false;
 		TreeMap<Double,ArrayList<MacroAgent>> orederedSellers = new TreeMap<Double,ArrayList<MacroAgent>>();
 		GoodDemander buyer=(GoodDemander)this.getAgent();
 		for (Agent agent:sellers){
@@ -162,6 +166,7 @@ public class CheapestGoodSupplierWithSwitching extends AbstractStrategy implemen
 				if(previousPrice>price){
 					if(previousPrice==Double.POSITIVE_INFINITY||strategy.switches(previousPrice,price)){
 						result.add(agent);
+						this.switched=true;
 					}else{
 						result.add(previousGoodSupplier);
 					}
@@ -203,6 +208,14 @@ public class CheapestGoodSupplierWithSwitching extends AbstractStrategy implemen
 			}
 		}
 		
+	}
+
+	public boolean isSwitched() {
+		return switched;
+	}
+
+	public void setSwitched(boolean switched) {
+		this.switched = switched;
 	}
 
 }
