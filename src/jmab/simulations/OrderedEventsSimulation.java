@@ -14,6 +14,7 @@
  */
 package jmab.simulations;
 
+import jmab.events.MicroSimpleCSVReportTic;
 import jmab.events.MacroSimEvent;
 import jmab.events.MacroTicEvent;
 import jmab.events.MacroVariableTicEvent;
@@ -176,6 +177,9 @@ public class OrderedEventsSimulation extends AbstractMacroSimulation implements
 				MicroMultiVariablesTicEvent varEvent = (MicroMultiVariablesTicEvent) event;
 				MicroSimEvent eventToSend = new MicroSimEvent(this.round, varEvent.getValues(this),varEvent.getVariableId());
 				super.fireEvent(eventToSend);
+			}else if(event instanceof MicroSimpleCSVReportTic){
+				MicroSimpleCSVReportTic varEvent = (MicroSimpleCSVReportTic) event;
+				varEvent.report();
 			}else if(event instanceof SerializationTicEvent){
 				SerializationTicEvent ev = (SerializationTicEvent) event;
 				if(this.round==ev.getRound()){
