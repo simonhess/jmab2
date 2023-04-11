@@ -14,7 +14,10 @@
  */
 package jmab.mechanisms;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import jmab.agents.CreditDemander;
 import jmab.agents.CreditSupplier;
@@ -32,6 +35,9 @@ import jmab.stockmatrix.Loan;
 //with this mechanism borrowers' demand for credit can be constrained by lenders' supply
 public class ConstrainedCreditMechanism extends AbstractCreditMechanism implements
 Mechanism {
+	HashMap<Long,ArrayList<MacroAgent>> demanderSupplierList;
+
+
 
 	/**
 	 * @param scheduler
@@ -81,6 +87,10 @@ Mechanism {
 				creditSupplier.setActive(false, idMarket);
 			} //TODO
 		}
+
+		if(!demanderSupplierList.get(creditDemander.getAgentId()).contains(creditSupplier)) {
+			demanderSupplierList.get(creditDemander.getAgentId()).add(creditSupplier);
+		}
 	}
 
 	/* (non-Javadoc)
@@ -104,4 +114,14 @@ Mechanism {
 		// TODO Auto-generated method stub
 
 	}
+
+	public HashMap<Long, ArrayList<MacroAgent>> getDemanderSupplierList() {
+		return demanderSupplierList;
+	}
+
+	public void setDemanderSupplierList(HashMap<Long, ArrayList<MacroAgent>> demanderSupplierList) {
+		this.demanderSupplierList = demanderSupplierList;
+	}
+	
+	
 }
