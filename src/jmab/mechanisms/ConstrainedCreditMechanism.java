@@ -87,9 +87,10 @@ Mechanism {
 				creditSupplier.setActive(false, idMarket);
 			} //TODO
 		}
-
-		if(!demanderSupplierList.get(creditDemander.getAgentId()).contains(creditSupplier)) {
-			demanderSupplierList.get(creditDemander.getAgentId()).add(creditSupplier);
+		if(demanderSupplierList!=null) {
+			if(!demanderSupplierList.get(creditDemander.getAgentId()).contains(creditSupplier)) {
+				demanderSupplierList.get(creditDemander.getAgentId()).add(creditSupplier);
+			}
 		}
 	}
 

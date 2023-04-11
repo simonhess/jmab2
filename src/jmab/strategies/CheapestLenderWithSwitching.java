@@ -116,8 +116,7 @@ public class CheapestLenderWithSwitching extends AbstractStrategy implements
 		}
 		double previousRate=0;
 		if(!previousLender.isDead()&&
-				previousLender.getLoanSupply(this.idLoanSM,CreditDemander, amount)>0
-				&&previousLender.isActive(((MacroSimulation)((SimulationController)this.scheduler).getSimulation()).getActiveMarketId())){
+				previousLender.isActive(((MacroSimulation)((SimulationController)this.scheduler).getSimulation()).getActiveMarketId())){
 			previousRate=previousLender.getInterestRate(idLoanSM, CreditDemander, amount, length);
 		}else{
 			previousRate=Double.POSITIVE_INFINITY;
