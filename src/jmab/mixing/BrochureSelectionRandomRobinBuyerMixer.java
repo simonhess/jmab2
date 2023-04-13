@@ -71,16 +71,9 @@ public class BrochureSelectionRandomRobinBuyerMixer extends AbstractTwoStepMarke
 		int marketId=((MacroSimulation)model.getSimulation()).getActiveMarketId();
 		buyers.shuffle(prng);
 		for (Agent buyer : buyers.getAgents()) {
-			
-			// Interact with selected sellers from first interaction
-			
-			if(((MacroAgent)buyer).isActive(marketId)){
-				AgentArrivalEvent event = 
-						new AgentArrivalEvent (model, (Agent)buyer, null);
-				model.fireEvent(event);
-			}
-			
-			// Interact on the market again if the buyer is still active. Select further sellers.
+				
+			// Interact on the market. If the buyer already selected sellers in the first interaction
+			// these sellers will be selected first
 			
 			MacroAgent b = (MacroAgent)buyer;
 			if(b.isActive(marketId)){
