@@ -12,17 +12,17 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Collection;
 
-import jmab.agents.CreditDemander;
-import jmab.agents.CreditSupplier;
-import jmab.agents.MacroAgent;
-import jmab.population.MacroPopulation;
-import jmab.simulations.MacroSimulation;
+import jmab2.agents.CreditDemander;
+import jmab2.agents.CreditSupplier;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MacroPopulation;
+import jmab2.simulations.MacroSimulation;
 import net.sourceforge.jabm.EventScheduler;
 import net.sourceforge.jabm.SimulationController;
 import net.sourceforge.jabm.agent.Agent;
@@ -88,7 +88,7 @@ public class CheapestLenderWithSwitching extends AbstractStrategy implements
 	}
 	
 	/* (non-Javadoc)
-	 * @see jmab.strategies.BorrowingStrategyWithSwitching#setPreviousLender(jmab.agents.CreditSupplier)
+	 * @see jmab2.strategies.BorrowingStrategyWithSwitching#setPreviousLender(jmab2.agents.CreditSupplier)
 	 */
 	public void setPreviousLender(CreditSupplier counterpart) {
 		this.previousLender=counterpart;
@@ -96,7 +96,7 @@ public class CheapestLenderWithSwitching extends AbstractStrategy implements
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.BorrowingStrategy#selectLender(java.util.ArrayList, double, int)
+	 * @see jmab2.strategies.BorrowingStrategy#selectLender(java.util.ArrayList, double, int)
 	 */
 	/* (non-Javadoc)
 	 * @see jmab.strategy.BorrowingStrategy#selectLender(java.util.ArrayList)

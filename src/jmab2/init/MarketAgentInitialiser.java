@@ -12,9 +12,9 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.init;
+package jmab2.init;
 
-import jmab.population.MarketPopulation;
+import jmab2.population.MarketPopulation;
 
 /**
  * @author Alessandro Caiani and Antoine Godin

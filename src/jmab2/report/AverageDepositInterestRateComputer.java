@@ -12,15 +12,15 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.report;
+package jmab2.report;
 
 import java.util.List;
 
-import jmab.agents.MacroAgent;
-import jmab.population.MacroPopulation;
-import jmab.simulations.MacroSimulation;
-import jmab.stockmatrix.Deposit;
-import jmab.stockmatrix.Item;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MacroPopulation;
+import jmab2.simulations.MacroSimulation;
+import jmab2.stockmatrix.Deposit;
+import jmab2.stockmatrix.Item;
 import net.sourceforge.jabm.Population;
 import net.sourceforge.jabm.agent.Agent;
 
@@ -33,7 +33,7 @@ public class AverageDepositInterestRateComputer implements MacroVariableComputer
 	private int stockId;
 
 	/* (non-Javadoc)
-	 * @see jmab.report.VariableComputer#computeVariable(jmab.simulations.MacroSimulation)
+	 * @see jmab2.report.VariableComputer#computeVariable(jmab2.simulations.MacroSimulation)
 	 */
 	@Override
 	public double computeVariable(MacroSimulation sim) {

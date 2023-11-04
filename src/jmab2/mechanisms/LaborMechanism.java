@@ -12,15 +12,15 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.mechanisms;
+package jmab2.mechanisms;
 
 import java.util.List;
 
-import jmab.agents.LaborDemander;
-import jmab.agents.LaborSupplier;
-import jmab.agents.LiabilitySupplier;
-import jmab.agents.MacroAgent;
-import jmab.stockmatrix.Item;
+import jmab2.agents.LaborDemander;
+import jmab2.agents.LaborSupplier;
+import jmab2.agents.LiabilitySupplier;
+import jmab2.agents.MacroAgent;
+import jmab2.stockmatrix.Item;
 
 /**
  * @author Alessandro Caiani and Antoine Godin
@@ -29,7 +29,7 @@ import jmab.stockmatrix.Item;
 public class LaborMechanism extends AbstractMechanism implements Mechanism {
 
 	/* (non-Javadoc)
-	 * @see jmab.mechanisms.Mechanism#execute(jmab.agents.MacroAgent, jmab.agents.MacroAgent, int)
+	 * @see jmab2.mechanisms.Mechanism#execute(jmab2.agents.MacroAgent, jmab2.agents.MacroAgent, int)
 	 */
 	public void execute( MacroAgent buyer, MacroAgent seller, int idMarket) {
 		execute((LaborDemander) buyer, (LaborSupplier) seller, idMarket);
@@ -137,7 +137,7 @@ public class LaborMechanism extends AbstractMechanism implements Mechanism {
 //	}
 
 	/* (non-Javadoc)
-	 * @see jmab.mechanisms.Mechanism#execute(jmab.agents.MacroAgent, java.util.List, int)
+	 * @see jmab2.mechanisms.Mechanism#execute(jmab2.agents.MacroAgent, java.util.List, int)
 	 */
 	@Override
 	public void execute(MacroAgent buyer, List<MacroAgent> seller, int idMarket) {

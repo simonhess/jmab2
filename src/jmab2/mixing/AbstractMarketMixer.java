@@ -12,11 +12,11 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.mixing;
+package jmab2.mixing;
 
-import jmab.agents.MacroAgent;
-import jmab.population.MarketPopulation;
-import jmab.simulations.MacroSimulation;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MarketPopulation;
+import jmab2.simulations.MacroSimulation;
 import net.sourceforge.jabm.agent.Agent;
 import net.sourceforge.jabm.mixing.RandomRobinAgentMixer;
 
@@ -38,7 +38,7 @@ public abstract class AbstractMarketMixer implements MarketMixer {
 	public AbstractMarketMixer() {}
 
 	/* (non-Javadoc)
-	 * @see jmab.mixing.MarketMixer#closed()
+	 * @see jmab2.mixing.MarketMixer#closed()
 	 */
 	
 	//if a buyer in the market is active then check whether there is at least one seller

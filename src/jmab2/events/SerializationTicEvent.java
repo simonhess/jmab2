@@ -12,7 +12,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.events;
+package jmab2.events;
 
 import java.io.BufferedOutputStream;
 import java.io.FileNotFoundException;
@@ -20,7 +20,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 
-import jmab.report.MacroVariableComputer;
+import jmab2.report.MacroVariableComputer;
 
 /**
  * @author Alessandro Caiani and Antoine Godin

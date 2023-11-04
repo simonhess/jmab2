@@ -12,10 +12,10 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.simulations;
+package jmab2.simulations;
 
-import jmab.population.MacroPopulation;
-import jmab.population.MarketPopulation;
+import jmab2.population.MacroPopulation;
+import jmab2.population.MarketPopulation;
 
 
 /**
@@ -27,7 +27,7 @@ public class BrochureMarket extends AbstractTwoStepMarketSimulation
 
 	protected int nbRuns;
 	/* (non-Javadoc)
-	 * @see jmab.simulations.AbstractTwoStepMarketSimulation#secondSteo()
+	 * @see jmab2.simulations.AbstractTwoStepMarketSimulation#secondSteo()
 	 */
 	@Override
 	public void secondStep() {
@@ -40,7 +40,7 @@ public class BrochureMarket extends AbstractTwoStepMarketSimulation
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.simulations.AbstractTwoStepMarketSimulation#firstStep()
+	 * @see jmab2.simulations.AbstractTwoStepMarketSimulation#firstStep()
 	 */
 	@Override
 	public void firstStep() {
@@ -62,13 +62,13 @@ public class BrochureMarket extends AbstractTwoStepMarketSimulation
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MarketSimulation#populateFromBytes(byte[], jmab.population.MacroPopulation)
+	 * @see jmab2.simulations.MarketSimulation#populateFromBytes(byte[], jmab2.population.MacroPopulation)
 	 */
 	@Override
 	public void populateFromBytes(byte[] content, MacroPopulation pop) {}
 
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MarketSimulation#getBytes()
+	 * @see jmab2.simulations.MarketSimulation#getBytes()
 	 */
 	@Override
 	public byte[] getBytes() {
@@ -76,7 +76,7 @@ public class BrochureMarket extends AbstractTwoStepMarketSimulation
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MarketSimulation#getPopulation()
+	 * @see jmab2.simulations.MarketSimulation#getPopulation()
 	 */
 	@Override
 	public MarketPopulation getPopulation() {

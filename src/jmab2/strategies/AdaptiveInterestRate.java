@@ -12,13 +12,13 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 
-import jmab.agents.InterestRateSetterWithTargets;
-import jmab.agents.MacroAgent;
-import jmab.population.MacroPopulation;
+import jmab2.agents.InterestRateSetterWithTargets;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MacroPopulation;
 import net.sourceforge.jabm.distribution.AbstractDelegatedDistribution;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
 
@@ -37,7 +37,7 @@ public class AdaptiveInterestRate extends AbstractStrategy implements
 	private int mktId;
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.InterestRateStrategy#computeInterestRate(jmab.agents.MacroAgent, double, int)
+	 * @see jmab2.strategies.InterestRateStrategy#computeInterestRate(jmab2.agents.MacroAgent, double, int)
 	 */
 	@Override
 	public double computeInterestRate(MacroAgent creditDemander, double amount,

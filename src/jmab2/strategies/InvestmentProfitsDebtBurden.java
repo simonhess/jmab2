@@ -12,16 +12,16 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 import java.util.List;
 
-import jmab.agents.InvestmentAgent;
-import jmab.population.MacroPopulation;
-import jmab.stockmatrix.CapitalGood;
-import jmab.stockmatrix.Item;
-import jmab.stockmatrix.Loan;
+import jmab2.agents.InvestmentAgent;
+import jmab2.population.MacroPopulation;
+import jmab2.stockmatrix.CapitalGood;
+import jmab2.stockmatrix.Item;
+import jmab2.stockmatrix.Loan;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
 
 /**
@@ -123,7 +123,7 @@ public class InvestmentProfitsDebtBurden extends AbstractStrategy implements
 
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.InvestmentStrategy#computeDesiredGrowth()
+	 * @see jmab2.strategies.InvestmentStrategy#computeDesiredGrowth()
 	 */
 	@Override
 	public double computeDesiredGrowth() {

@@ -12,11 +12,11 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 
-import jmab.population.MacroPopulation;
+import jmab2.population.MacroPopulation;
 
 /**
  * @author Alessandro Caiani and Antoine Godin
@@ -71,7 +71,7 @@ public class SwitchingStrategySimple extends AbstractSwitchingStrategy {
 
 	
 	/* (non-Javadoc)
-	 * @see jmab.strategies.AbstractSwitchingStrategy#getProbability(double, double)
+	 * @see jmab2.strategies.AbstractSwitchingStrategy#getProbability(double, double)
 	 */
 	@Override
 	protected double getProbability(double previous, double potential) {

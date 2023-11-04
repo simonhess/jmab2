@@ -12,7 +12,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.init;
+package jmab2.init;
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
@@ -20,8 +20,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 
-import jmab.population.MacroPopulation;
-import jmab.simulations.MacroSimulation;
+import jmab2.population.MacroPopulation;
+import jmab2.simulations.MacroSimulation;
 
 
 /**
@@ -34,7 +34,7 @@ public class SerializationInitialiser extends AbstractMacroAgentInitialiser impl
 	BufferedInputStream input;
 	
 	/* (non-Javadoc)
-	 * @see jmab.init.AbstractMacroAgentInitialiser#initialise(jmab.population.MacroPopulation)
+	 * @see jmab2.init.AbstractMacroAgentInitialiser#initialise(jmab2.population.MacroPopulation)
 	 */
 	@Override
 	public void initialise(MacroPopulation population, MacroSimulation sim) {

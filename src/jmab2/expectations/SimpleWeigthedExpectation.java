@@ -12,7 +12,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.expectations;
+package jmab2.expectations;
 
 import java.nio.ByteBuffer;
 
@@ -37,7 +37,7 @@ public class SimpleWeigthedExpectation implements Expectation {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.expectations.Expectation#getWeights()
+	 * @see jmab2.expectations.Expectation#getWeights()
 	 */
 	@Override
 	public double[][] getWeights() {
@@ -45,7 +45,7 @@ public class SimpleWeigthedExpectation implements Expectation {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.expectations.Expectation#setWeights(double[][])
+	 * @see jmab2.expectations.Expectation#setWeights(double[][])
 	 */
 	@Override
 	public void setWeights(double[][] weights) {
@@ -53,7 +53,7 @@ public class SimpleWeigthedExpectation implements Expectation {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.expectations.Expectation#getPassedValues()
+	 * @see jmab2.expectations.Expectation#getPassedValues()
 	 */
 	@Override
 	public double[][] getPassedValues() {
@@ -61,7 +61,7 @@ public class SimpleWeigthedExpectation implements Expectation {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.expectations.Expectation#setPassedValues(double[][])
+	 * @see jmab2.expectations.Expectation#setPassedValues(double[][])
 	 */
 	@Override
 	public void setPassedValues(double[][] passedValues) {
@@ -69,7 +69,7 @@ public class SimpleWeigthedExpectation implements Expectation {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.expectations.Expectation#getNumberPeriod()
+	 * @see jmab2.expectations.Expectation#getNumberPeriod()
 	 */
 	@Override
 	public int getNumberPeriod() {
@@ -77,7 +77,7 @@ public class SimpleWeigthedExpectation implements Expectation {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.expectations.Expectation#setNumberPeriod(int)
+	 * @see jmab2.expectations.Expectation#setNumberPeriod(int)
 	 */
 
 	@Override
@@ -116,12 +116,12 @@ public class SimpleWeigthedExpectation implements Expectation {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.expectations.Expectation#getAdaptiveParam()
+	 * @see jmab2.expectations.Expectation#getAdaptiveParam()
 	 */
 
 
 	/* (non-Javadoc)
-	 * @see jmab.expectations.Expectation#updateExpectation()
+	 * @see jmab2.expectations.Expectation#updateExpectation()
 	 */
 	@Override
 	public void updateExpectation() {
@@ -135,7 +135,7 @@ public class SimpleWeigthedExpectation implements Expectation {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.expectations.Expectation#getExpectation()
+	 * @see jmab2.expectations.Expectation#getExpectation()
 	 */
 	@Override
 	public double getExpectation() {
@@ -143,7 +143,7 @@ public class SimpleWeigthedExpectation implements Expectation {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.expectations.Expectation#addObservation(double[])
+	 * @see jmab2.expectations.Expectation#addObservation(double[])
 	 */
 	@Override
 	public void addObservation(double[] observation) {

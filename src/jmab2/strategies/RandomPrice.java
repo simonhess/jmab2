@@ -12,10 +12,10 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
-import jmab.agents.GoodDemander;
-import jmab.population.MacroPopulation;
+import jmab2.agents.GoodDemander;
+import jmab2.population.MacroPopulation;
 import net.sourceforge.jabm.EventScheduler;
 import net.sourceforge.jabm.agent.Agent;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
@@ -66,7 +66,7 @@ public class RandomPrice extends AbstractStrategy implements PricingStrategy {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategy.PricingStrategy#setPrice(jmab.agents.Seller, jmab.agents.Buyer, double, boolean)
+	 * @see jmab.strategy.PricingStrategy#setPrice(jmab2.agents.Seller, jmab2.agents.Buyer, double, boolean)
 	 */
 	@Override
 	public double computePrice() {
@@ -75,7 +75,7 @@ public class RandomPrice extends AbstractStrategy implements PricingStrategy {
 
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.PricingStrategy#computePriceForSpecificBuyer(jmab.agents.GoodDemander, double, boolean)
+	 * @see jmab2.strategies.PricingStrategy#computePriceForSpecificBuyer(jmab2.agents.GoodDemander, double, boolean)
 	 */
 	@Override
 	public double computePriceForSpecificBuyer(GoodDemander buyer,
@@ -85,7 +85,7 @@ public class RandomPrice extends AbstractStrategy implements PricingStrategy {
 
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SingleStrategy#getBytes()
+	 * @see jmab2.strategies.SingleStrategy#getBytes()
 	 */
 	@Override
 	public byte[] getBytes() {
@@ -94,7 +94,7 @@ public class RandomPrice extends AbstractStrategy implements PricingStrategy {
 
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SingleStrategy#populateFromBytes(byte[], jmab.population.MacroPopulation)
+	 * @see jmab2.strategies.SingleStrategy#populateFromBytes(byte[], jmab2.population.MacroPopulation)
 	 */
 	@Override
 	public void populateFromBytes(byte[] content, MacroPopulation pop) {}

@@ -12,13 +12,13 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.mixing;
+package jmab2.mixing;
 
 import java.util.ArrayList;
 
-import jmab.agents.MacroAgent;
-import jmab.population.MarketPopulation;
-import jmab.simulations.MacroSimulation;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MarketPopulation;
+import jmab2.simulations.MacroSimulation;
 import net.sourceforge.jabm.SimulationController;
 import net.sourceforge.jabm.agent.Agent;
 import net.sourceforge.jabm.agent.AgentList;
@@ -66,7 +66,7 @@ public class DynamicRandomRobinBuyerMixer extends AbstractMarketMixer implements
 	}
 	
 	/* (non-Javadoc)
-	 * @see jmab.mixing.AbstractMacroMIxer#invokeAgentInteractions(net.sourceforge.jabm.Population, net.sourceforge.jabm.SimulationController)
+	 * @see jmab2.mixing.AbstractMacroMIxer#invokeAgentInteractions(net.sourceforge.jabm.Population, net.sourceforge.jabm.SimulationController)
 	 */
 	@Override
 	public void invokeAgentInteractions(MarketPopulation population,

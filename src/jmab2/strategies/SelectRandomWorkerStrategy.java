@@ -12,13 +12,13 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import jmab.agents.MacroAgent;
-import jmab.population.MacroPopulation;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MacroPopulation;
 import net.sourceforge.jabm.agent.Agent;
 import net.sourceforge.jabm.agent.AgentList;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
@@ -35,7 +35,7 @@ public class SelectRandomWorkerStrategy extends AbstractStrategy implements
 	protected RandomEngine prng;
 	
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SelectWorkerStrategy#selectWorker(java.util.ArrayList)
+	 * @see jmab2.strategies.SelectWorkerStrategy#selectWorker(java.util.ArrayList)
 	 */
 	@Override
 	public MacroAgent selectWorker(List<Agent> workers) {
@@ -45,7 +45,7 @@ public class SelectRandomWorkerStrategy extends AbstractStrategy implements
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SelectWorkerStrategy#selectWorkers(java.util.List)
+	 * @see jmab2.strategies.SelectWorkerStrategy#selectWorkers(java.util.List)
 	 */
 	@Override
 	public List<MacroAgent> selectWorkers(List<Agent> workers, int n) {
@@ -73,7 +73,7 @@ public class SelectRandomWorkerStrategy extends AbstractStrategy implements
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SingleStrategy#getBytes()
+	 * @see jmab2.strategies.SingleStrategy#getBytes()
 	 */
 	@Override
 	public byte[] getBytes() {
@@ -81,7 +81,7 @@ public class SelectRandomWorkerStrategy extends AbstractStrategy implements
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SingleStrategy#populateFromBytes(byte[], jmab.population.MacroPopulation)
+	 * @see jmab2.strategies.SingleStrategy#populateFromBytes(byte[], jmab2.population.MacroPopulation)
 	 */
 	@Override
 	public void populateFromBytes(byte[] content, MacroPopulation pop) {}

@@ -1,10 +1,10 @@
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 
-import jmab.agents.SimpleAbstractAgent;
-import jmab.population.MacroPopulation;
-import jmab.simulations.MacroSimulation;
+import jmab2.agents.SimpleAbstractAgent;
+import jmab2.population.MacroPopulation;
+import jmab2.simulations.MacroSimulation;
 import net.sourceforge.jabm.SimulationController;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
 

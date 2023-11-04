@@ -12,10 +12,10 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.init;
+package jmab2.init;
 
-import jmab.population.MacroPopulation;
-import jmab.simulations.MacroSimulation;
+import jmab2.population.MacroPopulation;
+import jmab2.simulations.MacroSimulation;
 import net.sourceforge.jabm.Population;
 
 /**
@@ -35,7 +35,7 @@ public abstract class AbstractMacroAgentInitialiser implements
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.init.MacroAgentInitialiser#initialise(jmab.population.MacroPopulation)
+	 * @see jmab2.init.MacroAgentInitialiser#initialise(jmab2.population.MacroPopulation)
 	 */
 	@Override
 	abstract public void initialise(MacroPopulation population, MacroSimulation sim);

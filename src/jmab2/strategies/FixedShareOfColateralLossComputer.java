@@ -12,12 +12,12 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 
-import jmab.agents.MacroAgent;
-import jmab.population.MacroPopulation;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MacroPopulation;
 
 /**
  * @author Alessandro Caiani and Antoine Godin
@@ -29,7 +29,7 @@ public class FixedShareOfColateralLossComputer implements
 	private double shareLoss;
 	
 	/* (non-Javadoc)
-	 * @see jmab.strategies.ShareOfColateralLossComputer#getShareLoss(jmab.agents.MacroAgent)
+	 * @see jmab2.strategies.ShareOfColateralLossComputer#getShareLoss(jmab2.agents.MacroAgent)
 	 */
 	@Override
 	public double getShareLoss(MacroAgent cresitSupplier) {

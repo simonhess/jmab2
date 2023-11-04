@@ -12,17 +12,17 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.report;
+package jmab2.report;
 
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import jmab.agents.MacroAgent;
-import jmab.population.MacroPopulation;
-import jmab.simulations.MacroSimulation;
-import jmab.stockmatrix.Item;
-import jmab.stockmatrix.Loan;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MacroPopulation;
+import jmab2.simulations.MacroSimulation;
+import jmab2.stockmatrix.Item;
+import jmab2.stockmatrix.Loan;
 import net.sourceforge.jabm.Population;
 import net.sourceforge.jabm.agent.Agent;
 
@@ -74,7 +74,7 @@ public class MicroOutstandingLoansComputer extends AbstractMicroComputer impleme
 
 
 	/* (non-Javadoc)
-	 * @see jmab.report.MicroMultipleVariablesComputer#computeVariables(jmab.simulations.MacroSimulation)
+	 * @see jmab2.report.MicroMultipleVariablesComputer#computeVariables(jmab2.simulations.MacroSimulation)
 	 */
 	@Override
 	public Map<Long, Double> computeVariables(MacroSimulation sim) {

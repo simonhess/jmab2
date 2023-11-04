@@ -12,12 +12,12 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 
-import jmab.agents.IncomeTaxPayer;
-import jmab.population.MacroPopulation;
+import jmab2.agents.IncomeTaxPayer;
+import jmab2.population.MacroPopulation;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
 
 /**
@@ -33,7 +33,7 @@ public class IncomeWealthTaxStrategy extends AbstractStrategy implements TaxPaye
 	private double minIncomeTaxRate;
 	
 	/* (non-Javadoc)
-	 * @see jmab.strategies.TaxPayerStrategy#computeTaxes()
+	 * @see jmab2.strategies.TaxPayerStrategy#computeTaxes()
 	 */
 	@Override
 	public double computeTaxes() {
@@ -44,7 +44,7 @@ public class IncomeWealthTaxStrategy extends AbstractStrategy implements TaxPaye
 	}
 	
 	/* (non-Javadoc)
-	 * @see jmab.strategies.TaxPayerStrategy#updateRates(double)
+	 * @see jmab2.strategies.TaxPayerStrategy#updateRates(double)
 	 */
 	@Override
 	public void updateRates(double multiplier) {

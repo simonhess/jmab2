@@ -12,15 +12,15 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.mechanisms;
+package jmab2.mechanisms;
 
 import java.util.List;
 
-import jmab.agents.CreditDemander;
-import jmab.agents.CreditSupplier;
-import jmab.agents.MacroAgent;
-import jmab.stockmatrix.Deposit;
-import jmab.stockmatrix.Loan;
+import jmab2.agents.CreditDemander;
+import jmab2.agents.CreditSupplier;
+import jmab2.agents.MacroAgent;
+import jmab2.stockmatrix.Deposit;
+import jmab2.stockmatrix.Loan;
 
 /**
  * @author Alessandro Caiani and Antoine Godin
@@ -62,7 +62,7 @@ public class ReservesMechanism extends AbstractMechanism implements Mechanism {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.mechanisms.Mechanism#execute(jmab.agents.MacroAgent, jmab.agents.MacroAgent, int)
+	 * @see jmab2.mechanisms.Mechanism#execute(jmab2.agents.MacroAgent, jmab2.agents.MacroAgent, int)
 	 */
 	@Override
 	public void execute(MacroAgent buyer, MacroAgent seller, int idMarket) {
@@ -88,7 +88,7 @@ public class ReservesMechanism extends AbstractMechanism implements Mechanism {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.mechanisms.Mechanism#execute(jmab.agents.MacroAgent, java.util.List, int)
+	 * @see jmab2.mechanisms.Mechanism#execute(jmab2.agents.MacroAgent, java.util.List, int)
 	 */
 	@Override
 	public void execute(MacroAgent buyer, List<MacroAgent> seller, int idMarket) {

@@ -12,15 +12,15 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 
-import jmab.population.MacroPopulation;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
 import cern.jet.random.Beta;
 import cern.jet.random.Binomial;
 import cern.jet.random.engine.RandomEngine;
+import jmab2.population.MacroPopulation;
 
 /**
  * @author Alessandro Caiani and Antoine Godin
@@ -107,7 +107,7 @@ public class RandDOutcomeBetaDistribution extends AbstractStrategy implements
 
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.RandDOutcome#computeRandDOutcome()
+	 * @see jmab2.strategies.RandDOutcome#computeRandDOutcome()
 	 */
 	@Override
 	public double computeRandDOutcome(int nbResearchers) {

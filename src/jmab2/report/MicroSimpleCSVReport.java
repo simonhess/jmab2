@@ -12,12 +12,12 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.report;
+package jmab2.report;
 
 import java.util.Map;
 
-import jmab.events.MicroSimEvent;
-import jmab.simulations.MacroSimulation;
+import jmab2.events.MicroSimEvent;
+import jmab2.simulations.MacroSimulation;
 import net.sourceforge.jabm.Simulation;
 import net.sourceforge.jabm.event.SimulationStartingEvent;
 import net.sourceforge.jabm.report.CSVReportVariables;

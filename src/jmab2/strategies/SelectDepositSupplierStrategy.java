@@ -12,11 +12,11 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.util.ArrayList;
 
-import jmab.agents.MacroAgent;
+import jmab2.agents.MacroAgent;
 import net.sourceforge.jabm.agent.Agent;
 
 /**

@@ -12,7 +12,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -20,7 +20,7 @@ import java.nio.ByteBuffer;
 import java.util.HashMap;
 import java.util.Iterator;
 
-import jmab.population.MacroPopulation;
+import jmab2.population.MacroPopulation;
 import net.sourceforge.jabm.EventScheduler;
 import net.sourceforge.jabm.agent.Agent;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
@@ -58,7 +58,7 @@ MacroStrategy {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.MacroStrategy#getStrategy(int)
+	 * @see jmab2.strategies.MacroStrategy#getStrategy(int)
 	 */
 	@Override
 	public Strategy getStrategy(int strategyID) {

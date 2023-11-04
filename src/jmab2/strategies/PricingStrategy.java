@@ -12,9 +12,9 @@ AdaptiveReturnOnAC * JMAB - Java Macroeconomic Agent Based Modeling Toolkit
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
-import jmab.agents.GoodDemander;
+import jmab2.agents.GoodDemander;
 
 /**
  * @author Alessandro Caiani and Antoine Godin

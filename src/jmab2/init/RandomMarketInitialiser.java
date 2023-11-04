@@ -12,10 +12,10 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.init;
+package jmab2.init;
 
-import jmab.agents.MacroAgent;
-import jmab.population.MarketPopulation;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MarketPopulation;
 import net.sourceforge.jabm.agent.Agent;
 import net.sourceforge.jabm.agent.AgentList;
 import cern.jet.random.engine.RandomEngine;

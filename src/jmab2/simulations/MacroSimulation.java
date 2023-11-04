@@ -12,9 +12,9 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.simulations;
+package jmab2.simulations;
 
-import jmab.population.MacroPopulation;
+import jmab2.population.MacroPopulation;
 import net.sourceforge.jabm.Simulation;
 import net.sourceforge.jabm.agent.Agent;
 

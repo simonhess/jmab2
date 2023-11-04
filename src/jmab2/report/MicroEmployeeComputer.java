@@ -12,14 +12,14 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.report;
+package jmab2.report;
 
 import java.util.Map;
 import java.util.TreeMap;
 
-import jmab.agents.AbstractFirm;
-import jmab.population.MacroPopulation;
-import jmab.simulations.MacroSimulation;
+import jmab2.agents.AbstractFirm;
+import jmab2.population.MacroPopulation;
+import jmab2.simulations.MacroSimulation;
 import net.sourceforge.jabm.Population;
 import net.sourceforge.jabm.agent.Agent;
 
@@ -50,7 +50,7 @@ public class MicroEmployeeComputer extends AbstractMicroComputer implements
 
 
 	/* (non-Javadoc)
-	 * @see jmab.report.MicroMultipleVariablesComputer#computeVariables(jmab.simulations.MacroSimulation)
+	 * @see jmab2.report.MicroMultipleVariablesComputer#computeVariables(jmab2.simulations.MacroSimulation)
 	 */
 	@Override
 	public Map<Long, Double> computeVariables(MacroSimulation sim) {

@@ -12,16 +12,16 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 import java.util.List;
 
-import jmab.agents.InvestmentAgent;
-import jmab.agents.MacroAgent;
-import jmab.population.MacroPopulation;
-import jmab.stockmatrix.CapitalGood;
-import jmab.stockmatrix.Item;
+import jmab2.agents.InvestmentAgent;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MacroPopulation;
+import jmab2.stockmatrix.CapitalGood;
+import jmab2.stockmatrix.Item;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
 
 /**
@@ -36,7 +36,7 @@ public class RealCapitalDemandSimple extends AbstractStrategy implements
 	int capitalGoodId;
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.RealCapitalDemandStrategy#computeRealCapitalDemand(jmab.agents.MacroAgent)
+	 * @see jmab2.strategies.RealCapitalDemandStrategy#computeRealCapitalDemand(jmab2.agents.MacroAgent)
 	 */
 	@Override
 	public double computeRealCapitalDemand(MacroAgent seller) {

@@ -12,14 +12,14 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 import java.util.List;
 
-import jmab.agents.BaselIIIAgent;
-import jmab.population.MacroPopulation;
-import jmab.stockmatrix.Item;
+import jmab2.agents.BaselIIIAgent;
+import jmab2.population.MacroPopulation;
+import jmab2.stockmatrix.Item;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
 
 /**
@@ -36,7 +36,7 @@ public class BaselIIIReserveRequirementsBLR extends AbstractStrategy implements
 	private int[] reserveIds; //in the simplest case only loans (bonds, reserves and cash are weighted 0)
 	
 	/* (non-Javadoc)
-	 * @see jmab.strategies.FinanceStrategy#computeCreditDemand(double)
+	 * @see jmab2.strategies.FinanceStrategy#computeCreditDemand(double)
 	 */
 	@Override
 	public double computeCreditDemand(double expectedFinancialRequirement) {

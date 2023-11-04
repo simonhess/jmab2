@@ -12,7 +12,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.report;
+package jmab2.report;
 
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import jmab.events.MicroSimEvent;
+import jmab2.events.MicroSimEvent;
 import net.sourceforge.jabm.event.SimEvent;
 import net.sourceforge.jabm.report.XYReportVariables;
 

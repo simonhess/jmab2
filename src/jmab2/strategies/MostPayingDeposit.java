@@ -12,14 +12,14 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.util.ArrayList;
 
-import jmab.agents.DepositDemander;
-import jmab.agents.DepositSupplier;
-import jmab.agents.MacroAgent;
-import jmab.population.MacroPopulation;
+import jmab2.agents.DepositDemander;
+import jmab2.agents.DepositSupplier;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MacroPopulation;
 import net.sourceforge.jabm.agent.Agent;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
 
@@ -34,7 +34,7 @@ public class MostPayingDeposit extends AbstractStrategy implements
 	
 	
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SelectDepositSupplierStrategy#selectDepositSupplier(java.util.ArrayList, double)
+	 * @see jmab2.strategies.SelectDepositSupplierStrategy#selectDepositSupplier(java.util.ArrayList, double)
 	 */
 	@Override
 	public MacroAgent selectDepositSupplier(ArrayList<Agent> suppliers, double amount) {
@@ -53,7 +53,7 @@ public class MostPayingDeposit extends AbstractStrategy implements
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SingleStrategy#getBytes()
+	 * @see jmab2.strategies.SingleStrategy#getBytes()
 	 */
 	@Override
 	public byte[] getBytes() {
@@ -61,7 +61,7 @@ public class MostPayingDeposit extends AbstractStrategy implements
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SingleStrategy#populateFromBytes(byte[], jmab.population.MacroPopulation)
+	 * @see jmab2.strategies.SingleStrategy#populateFromBytes(byte[], jmab2.population.MacroPopulation)
 	 */
 	@Override
 	public void populateFromBytes(byte[] content, MacroPopulation pop) {}

@@ -12,17 +12,17 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.mechanisms;
+package jmab2.mechanisms;
 
 import java.util.List;
 
-import jmab.agents.AbstractBank;
-import jmab.agents.BondDemander;
-import jmab.agents.BondSupplier;
-import jmab.agents.LiabilitySupplier;
-import jmab.agents.MacroAgent;
-import jmab.stockmatrix.Bond;
-import jmab.stockmatrix.Item;
+import jmab2.agents.AbstractBank;
+import jmab2.agents.BondDemander;
+import jmab2.agents.BondSupplier;
+import jmab2.agents.LiabilitySupplier;
+import jmab2.agents.MacroAgent;
+import jmab2.stockmatrix.Bond;
+import jmab2.stockmatrix.Item;
 
 
 /**
@@ -50,7 +50,7 @@ public class BondMechanism extends AbstractMechanism implements Mechanism {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.mechanisms.Mechanism#execute(jmab.agents.MacroAgent, jmab.agents.MacroAgent, int)
+	 * @see jmab2.mechanisms.Mechanism#execute(jmab2.agents.MacroAgent, jmab2.agents.MacroAgent, int)
 	 */
 	@Override
 	public void execute(MacroAgent buyer, MacroAgent seller, int idMarket) {
@@ -175,7 +175,7 @@ public class BondMechanism extends AbstractMechanism implements Mechanism {
 //	}
 
 	/* (non-Javadoc)
-	 * @see jmab.mechanisms.Mechanism#execute(jmab.agents.MacroAgent, java.util.List, int)
+	 * @see jmab2.mechanisms.Mechanism#execute(jmab2.agents.MacroAgent, java.util.List, int)
 	 */
 	@Override
 	public void execute(MacroAgent buyer, List<MacroAgent> seller, int idMarket) {

@@ -12,7 +12,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.population;
+package jmab2.population;
 
 import java.util.List;
 
@@ -31,7 +31,7 @@ public abstract class AbstractConstantPopulationHandler extends AbstractPopulati
 	public AbstractConstantPopulationHandler() {}
 
 	/* (non-Javadoc)
-	 * @see jmab.population.AbstractPopulationHandler#handleAgent(net.sourceforge.jabm.agent.Agent, int, java.util.List)
+	 * @see jmab2.population.AbstractPopulationHandler#handleAgent(net.sourceforge.jabm.agent.Agent, int, java.util.List)
 	 */
 	@Override
 	protected void handleAgent(Agent agent, int id, List<Agent> agents, int populationId) {

@@ -12,19 +12,19 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.report;
+package jmab2.report;
 
 import java.util.LinkedHashMap;
 import java.util.List;
 
-import jmab.agents.AbstractFirm;
-import jmab.agents.LaborDemander;
-import jmab.agents.LaborSupplier;
-import jmab.agents.MacroAgent;
-import jmab.population.MacroPopulation;
-import jmab.simulations.MacroSimulation;
-import jmab.stockmatrix.AbstractGood;
-import jmab.stockmatrix.Item;
+import jmab2.agents.AbstractFirm;
+import jmab2.agents.LaborDemander;
+import jmab2.agents.LaborSupplier;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MacroPopulation;
+import jmab2.simulations.MacroSimulation;
+import jmab2.stockmatrix.AbstractGood;
+import jmab2.stockmatrix.Item;
 import net.sourceforge.jabm.Population;
 import net.sourceforge.jabm.agent.Agent;
 
@@ -58,7 +58,7 @@ public class RealGDPComputer implements MacroVariableComputer {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.report.VariableComputer#computeVariable(jmab.simulations.MacroSimulation)
+	 * @see jmab2.report.VariableComputer#computeVariable(jmab2.simulations.MacroSimulation)
 	 * Compute GDP and then adjust using the GDP deflator base year starting of the period?
 	 * need: nominal GDP
 	 * need2: deflator 

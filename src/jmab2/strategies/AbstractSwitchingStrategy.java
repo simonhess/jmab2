@@ -12,7 +12,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import cern.jet.random.Binomial;
 import cern.jet.random.engine.RandomEngine;
@@ -33,7 +33,7 @@ public abstract class AbstractSwitchingStrategy implements SwitchingStrategy {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SwitchingStrategy#setPrng(cern.jet.random.engine.RandomEngine)
+	 * @see jmab2.strategies.SwitchingStrategy#setPrng(cern.jet.random.engine.RandomEngine)
 	 */
 	@Override
 	public void setPrng(RandomEngine prng) {
@@ -49,7 +49,7 @@ public abstract class AbstractSwitchingStrategy implements SwitchingStrategy {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SwitchingStrategy#switches(double, double)
+	 * @see jmab2.strategies.SwitchingStrategy#switches(double, double)
 	 */
 	@Override
 	public boolean switches(double previous, double potential){

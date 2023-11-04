@@ -12,7 +12,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.expectations;
+package jmab2.expectations;
 
 import java.nio.ByteBuffer;
 import java.util.Set;

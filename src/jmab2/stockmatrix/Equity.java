@@ -12,9 +12,9 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.stockmatrix;
+package jmab2.stockmatrix;
 
-import jmab.agents.SimpleAbstractAgent;
+import jmab2.agents.SimpleAbstractAgent;
 
 /**
  * @author Alessandro Caiani and Antoine Godin

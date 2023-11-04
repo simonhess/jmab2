@@ -12,7 +12,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.agents;
+package jmab2.agents;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -23,15 +23,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import jmab.events.DeadAgentEvent;
-import jmab.events.MacroTicEvent;
-import jmab.expectations.Expectation;
-import jmab.expectations.PassedValues;
-import jmab.population.MacroPopulation;
-import jmab.population.MarketPopulation;
-import jmab.simulations.MacroSimulation;
-import jmab.stockmatrix.Item;
-import jmab.strategies.MacroStrategy;
+import jmab2.events.DeadAgentEvent;
+import jmab2.events.MacroTicEvent;
+import jmab2.expectations.Expectation;
+import jmab2.expectations.PassedValues;
+import jmab2.population.MacroPopulation;
+import jmab2.population.MarketPopulation;
+import jmab2.simulations.MacroSimulation;
+import jmab2.stockmatrix.Item;
+import jmab2.strategies.MacroStrategy;
 import net.sourceforge.jabm.SimulationController;
 import net.sourceforge.jabm.agent.AbstractAgent;
 import net.sourceforge.jabm.event.AgentArrivalEvent;

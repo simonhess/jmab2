@@ -12,13 +12,13 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.util.ArrayList;
 
-import jmab.agents.CreditDemander;
-import jmab.agents.CreditSupplier;
-import jmab.population.MacroPopulation;
+import jmab2.agents.CreditDemander;
+import jmab2.agents.CreditSupplier;
+import jmab2.population.MacroPopulation;
 import net.sourceforge.jabm.EventScheduler;
 import net.sourceforge.jabm.agent.Agent;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
@@ -72,7 +72,7 @@ public class CheapestLender extends AbstractStrategy implements
 	}
 	
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SingleStrategy#getBytes()
+	 * @see jmab2.strategies.SingleStrategy#getBytes()
 	 */
 	@Override
 	public byte[] getBytes() {
@@ -80,7 +80,7 @@ public class CheapestLender extends AbstractStrategy implements
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SingleStrategy#populateFromBytes(byte[], jmab.population.MacroPopulation)
+	 * @see jmab2.strategies.SingleStrategy#populateFromBytes(byte[], jmab2.population.MacroPopulation)
 	 */
 	@Override
 	public void populateFromBytes(byte[] content, MacroPopulation pop) {

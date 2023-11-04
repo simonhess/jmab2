@@ -12,14 +12,14 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 
-import jmab.agents.AbstractBank;
-import jmab.agents.MacroAgent;
-import jmab.population.MacroPopulation;
-import jmab.stockmatrix.Deposit;
+import jmab2.agents.AbstractBank;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MacroPopulation;
+import jmab2.stockmatrix.Deposit;
 import net.sourceforge.jabm.Population;
 import net.sourceforge.jabm.SimulationController;
 import net.sourceforge.jabm.agent.Agent;
@@ -41,7 +41,7 @@ DividendsStrategy {
 
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.DividendsStrategy#payDividends()
+	 * @see jmab2.strategies.DividendsStrategy#payDividends()
 	 */
 	@Override
 	public void payDividends() {

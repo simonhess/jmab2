@@ -12,13 +12,13 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 
-import jmab.agents.GoodDemander;
-import jmab.agents.PriceSetterWithTargets;
-import jmab.population.MacroPopulation;
+import jmab2.agents.GoodDemander;
+import jmab2.agents.PriceSetterWithTargets;
+import jmab2.population.MacroPopulation;
 import net.sourceforge.jabm.distribution.AbstractDelegatedDistribution;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
 
@@ -64,7 +64,7 @@ public class AdaptivePriceOnAC extends AbstractStrategy implements
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.PricingStrategy#computePriceForSpecificBuyer(jmab.agents.GoodDemander, double, boolean)
+	 * @see jmab2.strategies.PricingStrategy#computePriceForSpecificBuyer(jmab2.agents.GoodDemander, double, boolean)
 	 */
 	@Override
 	public double computePriceForSpecificBuyer(GoodDemander buyer,

@@ -12,7 +12,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.report;
+package jmab2.report;
 
 
 /**
@@ -23,7 +23,7 @@ public abstract class AbstractMicroComputer implements
 		MicroMultipleVariablesComputer {
 
 	/* (non-Javadoc)
-	 * @see jmab.report.MicroMultipleVariablesComputer#dispose()
+	 * @see jmab2.report.MicroMultipleVariablesComputer#dispose()
 	 */
 	@Override
 	public void dispose() {

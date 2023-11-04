@@ -12,13 +12,13 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.mixing;
+package jmab2.mixing;
 
 import java.util.ArrayList;
 
-import jmab.agents.MacroAgent;
-import jmab.population.MarketPopulation;
-import jmab.simulations.MacroSimulation;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MarketPopulation;
+import jmab2.simulations.MacroSimulation;
 import net.sourceforge.jabm.SimulationController;
 import net.sourceforge.jabm.agent.Agent;
 import net.sourceforge.jabm.agent.AgentList;
@@ -128,7 +128,7 @@ public class BrochureSelectionRandomRobinBuyerMixer extends AbstractTwoStepMarke
 		this.nbSellers = nbSellers;
 	}
 	/* (non-Javadoc)
-	 * @see jmab.mixing.TwoStepMarketMixer#invokeFirstAgentInteractions(jmab.population.MarketPopulation, net.sourceforge.jabm.SimulationController)
+	 * @see jmab2.mixing.TwoStepMarketMixer#invokeFirstAgentInteractions(jmab2.population.MarketPopulation, net.sourceforge.jabm.SimulationController)
 	 */
 	@Override
 	public void invokeFirstAgentInteractions(MarketPopulation population,
@@ -136,7 +136,7 @@ public class BrochureSelectionRandomRobinBuyerMixer extends AbstractTwoStepMarke
 		this.invokeFirstInteractions(population.getBuyers(), population.getSellers(), simulation);
 	}
 	/* (non-Javadoc)
-	 * @see jmab.mixing.TwoStepMarketMixer#invokeSecondAgentInteractions(jmab.population.MarketPopulation, net.sourceforge.jabm.SimulationController)
+	 * @see jmab2.mixing.TwoStepMarketMixer#invokeSecondAgentInteractions(jmab2.population.MarketPopulation, net.sourceforge.jabm.SimulationController)
 	 */
 	@Override
 	public void invokeSecondAgentInteractions(MarketPopulation population,

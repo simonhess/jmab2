@@ -12,10 +12,10 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.events;
+package jmab2.events;
 
-import jmab.agents.GoodDemander;
-import jmab.agents.GoodSupplier;
+import jmab2.agents.GoodDemander;
+import jmab2.agents.GoodSupplier;
 import net.sourceforge.jabm.event.SimEvent;
 
 /**

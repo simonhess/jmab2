@@ -12,18 +12,18 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.mechanisms;
+package jmab2.mechanisms;
 
 import java.util.List;
 
-import jmab.agents.DepositDemander;
-import jmab.agents.DepositSupplier;
-import jmab.agents.LiabilitySupplier;
-import jmab.agents.MacroAgent;
-import jmab.simulations.MarketSimulation;
-import jmab.stockmatrix.Cash;
-import jmab.stockmatrix.Deposit;
-import jmab.stockmatrix.Item;
+import jmab2.agents.DepositDemander;
+import jmab2.agents.DepositSupplier;
+import jmab2.agents.LiabilitySupplier;
+import jmab2.agents.MacroAgent;
+import jmab2.simulations.MarketSimulation;
+import jmab2.stockmatrix.Cash;
+import jmab2.stockmatrix.Deposit;
+import jmab2.stockmatrix.Item;
 
 /**
  * @author Alessandro Caiani and Antoine Godin
@@ -94,7 +94,7 @@ public class DepositMechanism extends AbstractMechanism implements Mechanism {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.mechanisms.Mechanism#execute(jmab.agents.MacroAgent, jmab.agents.MacroAgent, int)
+	 * @see jmab2.mechanisms.Mechanism#execute(jmab2.agents.MacroAgent, jmab2.agents.MacroAgent, int)
 	 */
 	@Override
 	public void execute(MacroAgent buyer, MacroAgent seller, int idMarket) {
@@ -177,7 +177,7 @@ public class DepositMechanism extends AbstractMechanism implements Mechanism {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.mechanisms.Mechanism#execute(jmab.agents.MacroAgent, java.util.List, int)
+	 * @see jmab2.mechanisms.Mechanism#execute(jmab2.agents.MacroAgent, java.util.List, int)
 	 */
 	@Override
 	public void execute(MacroAgent buyer, List<MacroAgent> seller, int idMarket) {

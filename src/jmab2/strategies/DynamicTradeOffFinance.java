@@ -12,17 +12,17 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 import java.util.List;
 import java.util.Random;
 
-import jmab.agents.FinanceAgent;
-import jmab.agents.MacroAgent;
-import jmab.population.MacroPopulation;
-import jmab.stockmatrix.Item;
-import jmab.stockmatrix.Loan;
+import jmab2.agents.FinanceAgent;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MacroPopulation;
+import jmab2.stockmatrix.Item;
+import jmab2.stockmatrix.Loan;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
 
 /**
@@ -116,7 +116,7 @@ public class DynamicTradeOffFinance extends AbstractStrategy implements
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.FinanceStrategy#computeCreditDemand(double)
+	 * @see jmab2.strategies.FinanceStrategy#computeCreditDemand(double)
 	 */
 	public void updateLeverageTarget (){
 		FinanceAgent borrower= (FinanceAgent)this.getAgent();

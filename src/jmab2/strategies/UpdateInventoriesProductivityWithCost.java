@@ -12,13 +12,13 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 
-import jmab.agents.AbstractFirm;
-import jmab.population.MacroPopulation;
-import jmab.stockmatrix.CapitalGood;
+import jmab2.agents.AbstractFirm;
+import jmab2.population.MacroPopulation;
+import jmab2.stockmatrix.CapitalGood;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
 
 /**
@@ -49,7 +49,7 @@ public class UpdateInventoriesProductivityWithCost extends AbstractStrategy
 
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.UpdateInventoriesProductivityStrategy#updateInventoriesProductivity(double)
+	 * @see jmab2.strategies.UpdateInventoriesProductivityStrategy#updateInventoriesProductivity(double)
 	 */
 	@Override
 	public void updateInventoriesProductivity(double productivity) {

@@ -12,9 +12,9 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
-import jmab.agents.BondSupplier;
+import jmab2.agents.BondSupplier;
 
 /**
  * @author Alessandro Caiani and Antoine Godin

@@ -12,9 +12,9 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
-import jmab.population.MacroPopulation;
+import jmab2.population.MacroPopulation;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
 
 /**
@@ -31,7 +31,7 @@ public class OutputOnDemand extends AbstractStrategy implements
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SingleStrategy#getBytes()
+	 * @see jmab2.strategies.SingleStrategy#getBytes()
 	 */
 	@Override
 	public byte[] getBytes() {
@@ -39,7 +39,7 @@ public class OutputOnDemand extends AbstractStrategy implements
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SingleStrategy#populateFromBytes(byte[], jmab.population.MacroPopulation)
+	 * @see jmab2.strategies.SingleStrategy#populateFromBytes(byte[], jmab2.population.MacroPopulation)
 	 */
 	@Override
 	public void populateFromBytes(byte[] content, MacroPopulation pop) {}

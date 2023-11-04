@@ -12,7 +12,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.population;
+package jmab2.population;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -21,13 +21,13 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Comparator;
 
-import jmab.agents.MacroAgent;
 import net.sourceforge.jabm.Population;
 import net.sourceforge.jabm.agent.Agent;
 import net.sourceforge.jabm.agent.AgentList;
 import net.sourceforge.jabm.event.EventListener;
 import net.sourceforge.jabm.event.SimEvent;
 import cern.jet.random.engine.RandomEngine;
+import jmab2.agents.MacroAgent;
 
 /**
  * @author Alessandro Caiani and Antoine Godin

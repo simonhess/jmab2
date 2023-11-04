@@ -12,9 +12,9 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.events;
+package jmab2.events;
 
-import jmab.agents.MacroAgent;
+import jmab2.agents.MacroAgent;
 import net.sourceforge.jabm.event.SimEvent;
 
 /**

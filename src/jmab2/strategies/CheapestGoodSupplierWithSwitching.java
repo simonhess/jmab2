@@ -12,7 +12,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
@@ -20,11 +20,11 @@ import java.util.Collection;
 import java.util.List;
 import java.util.TreeMap;
 
-import jmab.agents.GoodDemander;
-import jmab.agents.GoodSupplier;
-import jmab.agents.MacroAgent;
-import jmab.population.MacroPopulation;
-import jmab.simulations.MacroSimulation;
+import jmab2.agents.GoodDemander;
+import jmab2.agents.GoodSupplier;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MacroPopulation;
+import jmab2.simulations.MacroSimulation;
 import net.sourceforge.jabm.EventScheduler;
 import net.sourceforge.jabm.SimulationController;
 import net.sourceforge.jabm.agent.Agent;
@@ -96,7 +96,7 @@ public class CheapestGoodSupplierWithSwitching extends AbstractStrategy implemen
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.BuyingStrategy#selectGoodSupplier(java.util.ArrayList, double, boolean)
+	 * @see jmab2.strategies.BuyingStrategy#selectGoodSupplier(java.util.ArrayList, double, boolean)
 	 */
 	@Override
 	public MacroAgent selectGoodSupplier(ArrayList<Agent> goodSuppliers, double demand, boolean real) {
@@ -129,7 +129,7 @@ public class CheapestGoodSupplierWithSwitching extends AbstractStrategy implemen
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.BuyingStrategyWithSwitching#setPreviousSeller(jmab.agents.GoodSupplier)
+	 * @see jmab2.strategies.BuyingStrategyWithSwitching#setPreviousSeller(jmab2.agents.GoodSupplier)
 	 */
 	public void setPreviousSeller(GoodSupplier counterpart) {
 		this.previousGoodSupplier=counterpart;
@@ -137,7 +137,7 @@ public class CheapestGoodSupplierWithSwitching extends AbstractStrategy implemen
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SelectSellerStrategy#selectMultipleGoodSupplier(java.util.ArrayList, double, boolean)
+	 * @see jmab2.strategies.SelectSellerStrategy#selectMultipleGoodSupplier(java.util.ArrayList, double, boolean)
 	 */
 	@Override
 	public List<MacroAgent> selectMultipleGoodSupplier(

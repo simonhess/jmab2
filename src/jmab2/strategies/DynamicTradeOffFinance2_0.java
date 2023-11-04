@@ -12,12 +12,12 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 
-import jmab.agents.FinanceAgent;
-import jmab.population.MacroPopulation;
+import jmab2.agents.FinanceAgent;
+import jmab2.population.MacroPopulation;
 import net.sourceforge.jabm.distribution.AbstractDelegatedDistribution;
 
 /**

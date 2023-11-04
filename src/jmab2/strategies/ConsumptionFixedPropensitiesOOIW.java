@@ -12,12 +12,12 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 
-import jmab.agents.AbstractHousehold;
-import jmab.population.MacroPopulation;
+import jmab2.agents.AbstractHousehold;
+import jmab2.population.MacroPopulation;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
 
 /**
@@ -81,7 +81,7 @@ public class ConsumptionFixedPropensitiesOOIW extends AbstractStrategy
 
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.ConsumptionStrategy#computeRealConsumptionDemand()
+	 * @see jmab2.strategies.ConsumptionStrategy#computeRealConsumptionDemand()
 	 */
 	@Override
 	public double computeRealConsumptionDemand() {

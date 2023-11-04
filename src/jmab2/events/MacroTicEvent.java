@@ -12,11 +12,11 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.events;
+package jmab2.events;
 
 import java.nio.ByteBuffer;
 
-import jmab.population.MacroPopulation;
+import jmab2.population.MacroPopulation;
 import net.sourceforge.jabm.SimulationController;
 import net.sourceforge.jabm.event.SimulationControllerEvent;
 

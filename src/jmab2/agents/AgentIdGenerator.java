@@ -1,4 +1,4 @@
-package jmab.agents;
+package jmab2.agents;
 /*
  * JMAB - Java Macroeconomic Agent Based Modeling Toolkit
  * Copyright (C) 2013 Alessandro Caiani and Antoine Godin

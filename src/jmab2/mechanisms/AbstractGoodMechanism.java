@@ -12,10 +12,10 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.mechanisms;
+package jmab2.mechanisms;
 
-import jmab.agents.MacroAgent;
-import jmab.simulations.MarketSimulation;
+import jmab2.agents.MacroAgent;
+import jmab2.simulations.MarketSimulation;
 
 /**
  * @author Alessandro Caiani and Antoine Godin
@@ -40,7 +40,7 @@ public abstract class AbstractGoodMechanism extends AbstractMechanism implements
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.mechanisms.Mechanism#execute(jmab.agents.MacroAgent, jmab.agents.MacroAgent, int)
+	 * @see jmab2.mechanisms.Mechanism#execute(jmab2.agents.MacroAgent, jmab2.agents.MacroAgent, int)
 	 */
 	@Override
 	public abstract void execute(MacroAgent buyer, MacroAgent seller, int idMarket);

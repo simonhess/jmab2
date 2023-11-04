@@ -12,15 +12,15 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 import java.util.List;
 
-import jmab.agents.CreditSupplier;
-import jmab.population.MacroPopulation;
-import jmab.stockmatrix.Item;
-import jmab.stockmatrix.Loan;
+import jmab2.agents.CreditSupplier;
+import jmab2.population.MacroPopulation;
+import jmab2.stockmatrix.Item;
+import jmab2.stockmatrix.Loan;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
 
 /**
@@ -170,7 +170,7 @@ public class SupplyCreditBaselIII extends AbstractStrategy implements
 
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SupplyCreditStrategy#computeCreditSupply()
+	 * @see jmab2.strategies.SupplyCreditStrategy#computeCreditSupply()
 	 */
 	@Override
 	public double computeCreditSupply() {

@@ -12,18 +12,18 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
 
-import jmab.agents.AbstractFirm;
-import jmab.agents.MacroAgent;
-import jmab.agents.SimpleAbstractAgent;
-import jmab.population.MacroPopulation;
-import jmab.stockmatrix.CapitalGood;
+import jmab2.agents.AbstractFirm;
+import jmab2.agents.MacroAgent;
+import jmab2.agents.SimpleAbstractAgent;
+import jmab2.population.MacroPopulation;
+import jmab2.stockmatrix.CapitalGood;
 import net.sourceforge.jabm.agent.Agent;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
 
@@ -72,7 +72,7 @@ public class BestQualityPriceCapitalSupplier extends AbstractStrategy implements
 
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SelectSellerStrategy#selectGoodSupplier(java.util.ArrayList, double, boolean)
+	 * @see jmab2.strategies.SelectSellerStrategy#selectGoodSupplier(java.util.ArrayList, double, boolean)
 	 */
 	@Override
 	public MacroAgent selectGoodSupplier(ArrayList<Agent> sellers,
@@ -96,7 +96,7 @@ public class BestQualityPriceCapitalSupplier extends AbstractStrategy implements
 
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SelectSellerStrategy#selectMultipleGoodSupplier(java.util.ArrayList, double, boolean)
+	 * @see jmab2.strategies.SelectSellerStrategy#selectMultipleGoodSupplier(java.util.ArrayList, double, boolean)
 	 */
 	@Override
 	public List<MacroAgent> selectMultipleGoodSupplier(

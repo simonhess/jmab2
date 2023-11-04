@@ -12,18 +12,18 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.simulations;
+package jmab2.simulations;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import jmab.agents.MacroAgent;
-import jmab.events.MarketTicEvent;
-import jmab.init.MarketAgentInitialiser;
-import jmab.mechanisms.Mechanism;
-import jmab.mixing.TwoStepMarketMixer;
-import jmab.population.MacroPopulation;
-import jmab.population.MarketPopulation;
+import jmab2.agents.MacroAgent;
+import jmab2.events.MarketTicEvent;
+import jmab2.init.MarketAgentInitialiser;
+import jmab2.mechanisms.Mechanism;
+import jmab2.mixing.TwoStepMarketMixer;
+import jmab2.population.MacroPopulation;
+import jmab2.population.MarketPopulation;
 import net.sourceforge.jabm.EventScheduler;
 import net.sourceforge.jabm.SimulationController;
 import net.sourceforge.jabm.agent.Agent;
@@ -300,7 +300,7 @@ public abstract class AbstractTwoStepMarketSimulation implements MarketSimulatio
 	public abstract void firstStep();
 
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MarketSimulation#getMarketId()
+	 * @see jmab2.simulations.MarketSimulation#getMarketId()
 	 */
 	@Override
 	public int getMarketId() {
@@ -308,7 +308,7 @@ public abstract class AbstractTwoStepMarketSimulation implements MarketSimulatio
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MarketSimulation#setMarketId(int)
+	 * @see jmab2.simulations.MarketSimulation#setMarketId(int)
 	 */
 	@Override
 	public void setMarketId(int marketId) {
@@ -316,7 +316,7 @@ public abstract class AbstractTwoStepMarketSimulation implements MarketSimulatio
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MarketSimulation#subscribeToEvents(net.sourceforge.jabm.EventScheduler)
+	 * @see jmab2.simulations.MarketSimulation#subscribeToEvents(net.sourceforge.jabm.EventScheduler)
 	 */
 	@Override
 	public void subscribeToEvents(EventScheduler scheduler) {
@@ -326,7 +326,7 @@ public abstract class AbstractTwoStepMarketSimulation implements MarketSimulatio
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MarketSimulation#setSimulation(jmab.simulations.MacroSimulation)
+	 * @see jmab2.simulations.MarketSimulation#setSimulation(jmab2.simulations.MacroSimulation)
 	 */
 	@Override
 	public void setSimulation(MacroSimulation simulation) {
@@ -335,7 +335,7 @@ public abstract class AbstractTwoStepMarketSimulation implements MarketSimulatio
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MarketSimulation#initialiseAgents()
+	 * @see jmab2.simulations.MarketSimulation#initialiseAgents()
 	 */
 	@Override
 	public void initialiseAgents() {
@@ -350,7 +350,7 @@ public abstract class AbstractTwoStepMarketSimulation implements MarketSimulatio
 	}
 	
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MarketSimulation#commit(jmab.agents.MacroAgent, java.util.List, int)
+	 * @see jmab2.simulations.MarketSimulation#commit(jmab2.agents.MacroAgent, java.util.List, int)
 	 */
 	@Override
 	public void commit(MacroAgent buyer, List<MacroAgent> sellers,
@@ -359,7 +359,7 @@ public abstract class AbstractTwoStepMarketSimulation implements MarketSimulatio
 	}
 	
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MarketSimulation#closed()
+	 * @see jmab2.simulations.MarketSimulation#closed()
 	 */
 	@Override
 	public boolean closed() {

@@ -12,12 +12,12 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 
-import jmab.agents.InvestmentAgent;
-import jmab.population.MacroPopulation;
+import jmab2.agents.InvestmentAgent;
+import jmab2.population.MacroPopulation;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
 
 /**
@@ -176,7 +176,7 @@ public class InvestmentCapacityOperatingCashFlow extends AbstractStrategy implem
 	
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.InvestmentStrategy#computeDesiredGrowth()
+	 * @see jmab2.strategies.InvestmentStrategy#computeDesiredGrowth()
 	 */
 	@Override
 	public double computeDesiredGrowth() {

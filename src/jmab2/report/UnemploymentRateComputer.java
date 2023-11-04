@@ -12,11 +12,11 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.report;
+package jmab2.report;
 
-import jmab.agents.LaborSupplier;
-import jmab.population.MacroPopulation;
-import jmab.simulations.MacroSimulation;
+import jmab2.agents.LaborSupplier;
+import jmab2.population.MacroPopulation;
+import jmab2.simulations.MacroSimulation;
 import net.sourceforge.jabm.Population;
 import net.sourceforge.jabm.agent.Agent;
 
@@ -45,7 +45,7 @@ public class UnemploymentRateComputer implements MacroVariableComputer {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.report.VariableComputer#computeVariable()
+	 * @see jmab2.report.VariableComputer#computeVariable()
 	 */
 	@Override
 	public double computeVariable(MacroSimulation sim) {

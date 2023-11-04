@@ -12,16 +12,16 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
 
-import jmab.agents.GoodDemander;
-import jmab.agents.GoodSupplier;
-import jmab.agents.MacroAgent;
-import jmab.population.MacroPopulation;
+import jmab2.agents.GoodDemander;
+import jmab2.agents.GoodSupplier;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MacroPopulation;
 import net.sourceforge.jabm.EventScheduler;
 import net.sourceforge.jabm.agent.Agent;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
@@ -74,7 +74,7 @@ public class CheapestGoodSupplier extends AbstractStrategy implements SelectSell
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SelectSellerStrategy#selectMultipleGoodSupplier(java.util.ArrayList, double, boolean)
+	 * @see jmab2.strategies.SelectSellerStrategy#selectMultipleGoodSupplier(java.util.ArrayList, double, boolean)
 	 */
 	@Override
 	public List<MacroAgent> selectMultipleGoodSupplier(
@@ -103,7 +103,7 @@ public class CheapestGoodSupplier extends AbstractStrategy implements SelectSell
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SingleStrategy#getBytes()
+	 * @see jmab2.strategies.SingleStrategy#getBytes()
 	 */
 	@Override
 	public byte[] getBytes() {
@@ -111,7 +111,7 @@ public class CheapestGoodSupplier extends AbstractStrategy implements SelectSell
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SingleStrategy#populateFromBytes(byte[], jmab.population.MacroPopulation)
+	 * @see jmab2.strategies.SingleStrategy#populateFromBytes(byte[], jmab2.population.MacroPopulation)
 	 */
 	@Override
 	public void populateFromBytes(byte[] content, MacroPopulation pop) {

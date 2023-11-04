@@ -12,18 +12,18 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.simulations;
+package jmab2.simulations;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import jmab.agents.MacroAgent;
-import jmab.events.MarketTicEvent;
-import jmab.init.MarketAgentInitialiser;
-import jmab.mechanisms.Mechanism;
-import jmab.mixing.MarketMixer;
-import jmab.population.MacroPopulation;
-import jmab.population.MarketPopulation;
+import jmab2.agents.MacroAgent;
+import jmab2.events.MarketTicEvent;
+import jmab2.init.MarketAgentInitialiser;
+import jmab2.mechanisms.Mechanism;
+import jmab2.mixing.MarketMixer;
+import jmab2.population.MacroPopulation;
+import jmab2.population.MarketPopulation;
 import net.sourceforge.jabm.EventScheduler;
 import net.sourceforge.jabm.SimulationController;
 import net.sourceforge.jabm.agent.Agent;
@@ -165,14 +165,14 @@ public class SimpleMarketSimulation implements
 	}
 	
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MarketSimulation#getMarketId()
+	 * @see jmab2.simulations.MarketSimulation#getMarketId()
 	 */
 	public int getMarketId() {
 		return marketId;
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MarketSimulation#setMarketId(int)
+	 * @see jmab2.simulations.MarketSimulation#setMarketId(int)
 	 */
 	public void setMarketId(int marketId) {
 		this.marketId=marketId;
@@ -315,7 +315,7 @@ public class SimpleMarketSimulation implements
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MarketSimulation#commit(jmab.agents.MacroAgent, java.util.List, int)
+	 * @see jmab2.simulations.MarketSimulation#commit(jmab2.agents.MacroAgent, java.util.List, int)
 	 */
 	@Override
 	public void commit(MacroAgent buyer, List<MacroAgent> sellers,
@@ -325,13 +325,13 @@ public class SimpleMarketSimulation implements
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MarketSimulation#populateFromBytes(byte[], jmab.population.MacroPopulation)
+	 * @see jmab2.simulations.MarketSimulation#populateFromBytes(byte[], jmab2.population.MacroPopulation)
 	 */
 	@Override
 	public void populateFromBytes(byte[] content, MacroPopulation pop) {}
 
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MarketSimulation#getBytes()
+	 * @see jmab2.simulations.MarketSimulation#getBytes()
 	 */
 	@Override
 	public byte[] getBytes() {
@@ -339,7 +339,7 @@ public class SimpleMarketSimulation implements
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MarketSimulation#getPopulation()
+	 * @see jmab2.simulations.MarketSimulation#getPopulation()
 	 */
 	@Override
 	public MarketPopulation getPopulation() {

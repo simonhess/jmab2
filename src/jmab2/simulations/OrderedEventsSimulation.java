@@ -12,18 +12,18 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.simulations;
+package jmab2.simulations;
 
-import jmab.events.MicroSimpleCSVReportTic;
-import jmab.events.MacroSimEvent;
-import jmab.events.MacroTicEvent;
-import jmab.events.MacroVariableTicEvent;
-import jmab.events.MarketInteractionsFinishedEvent;
-import jmab.events.MarketInteractionsStartingEvent;
-import jmab.events.MicroMultiVariablesTicEvent;
-import jmab.events.MicroSimEvent;
-import jmab.events.SerializationTicEvent;
-import jmab.population.MacroPopulation;
+import jmab2.events.MacroSimEvent;
+import jmab2.events.MacroTicEvent;
+import jmab2.events.MacroVariableTicEvent;
+import jmab2.events.MarketInteractionsFinishedEvent;
+import jmab2.events.MarketInteractionsStartingEvent;
+import jmab2.events.MicroMultiVariablesTicEvent;
+import jmab2.events.MicroSimEvent;
+import jmab2.events.MicroSimpleCSVReportTic;
+import jmab2.events.SerializationTicEvent;
+import jmab2.population.MacroPopulation;
 
 /**
  * @author Alessandro Caiani and Antoine Godin
@@ -196,7 +196,7 @@ public class OrderedEventsSimulation extends AbstractMacroSimulation implements
 
 
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MacroSimulation#populateFromBytes(byte[], jmab.population.MacroPopulation)
+	 * @see jmab2.simulations.MacroSimulation#populateFromBytes(byte[], jmab2.population.MacroPopulation)
 	 */
 	@Override
 	public void populateFromBytes(byte[] content, MacroPopulation pop) {
@@ -206,7 +206,7 @@ public class OrderedEventsSimulation extends AbstractMacroSimulation implements
 
 
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MacroSimulation#getBytes()
+	 * @see jmab2.simulations.MacroSimulation#getBytes()
 	 */
 	@Override
 	public byte[] getBytes() {

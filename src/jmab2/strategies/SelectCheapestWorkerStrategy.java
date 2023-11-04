@@ -12,14 +12,14 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.util.List;
 import java.util.TreeMap;
 
-import jmab.agents.LaborSupplier;
-import jmab.agents.MacroAgent;
-import jmab.population.MacroPopulation;
+import jmab2.agents.LaborSupplier;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MacroPopulation;
 import net.sourceforge.jabm.agent.Agent;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
 
@@ -31,7 +31,7 @@ import net.sourceforge.jabm.strategy.AbstractStrategy;
 public class SelectCheapestWorkerStrategy extends AbstractStrategy implements SelectWorkerStrategy {
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SelectWorkerStrategy#selectWorker(java.util.ArrayList)
+	 * @see jmab2.strategies.SelectWorkerStrategy#selectWorker(java.util.ArrayList)
 	 */
 	@Override
 	public MacroAgent selectWorker(List<Agent> workers) {
@@ -48,7 +48,7 @@ public class SelectCheapestWorkerStrategy extends AbstractStrategy implements Se
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SelectWorkerStrategy#selectWorkers(java.util.List)
+	 * @see jmab2.strategies.SelectWorkerStrategy#selectWorkers(java.util.List)
 	 */
 	@Override
 	public List<MacroAgent> selectWorkers(List<Agent> workers, int n) {
@@ -69,7 +69,7 @@ public class SelectCheapestWorkerStrategy extends AbstractStrategy implements Se
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SingleStrategy#getBytes()
+	 * @see jmab2.strategies.SingleStrategy#getBytes()
 	 */
 	@Override
 	public byte[] getBytes() {
@@ -77,7 +77,7 @@ public class SelectCheapestWorkerStrategy extends AbstractStrategy implements Se
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SingleStrategy#populateFromBytes(byte[], jmab.population.MacroPopulation)
+	 * @see jmab2.strategies.SingleStrategy#populateFromBytes(byte[], jmab2.population.MacroPopulation)
 	 */
 	@Override
 	public void populateFromBytes(byte[] content, MacroPopulation pop) {}

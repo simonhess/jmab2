@@ -12,19 +12,19 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.mechanisms;
+package jmab2.mechanisms;
 
 import java.util.List;
 
-import jmab.agents.BondSupplier;
-import jmab.agents.GoodDemander;
-import jmab.agents.GoodSupplier;
-import jmab.agents.LiabilitySupplier;
-import jmab.agents.MacroAgent;
-import jmab.simulations.MarketSimulation;
-import jmab.stockmatrix.CapitalGood;
-import jmab.stockmatrix.ConsumptionGood;
-import jmab.stockmatrix.Item;
+import jmab2.agents.BondSupplier;
+import jmab2.agents.GoodDemander;
+import jmab2.agents.GoodSupplier;
+import jmab2.agents.LiabilitySupplier;
+import jmab2.agents.MacroAgent;
+import jmab2.simulations.MarketSimulation;
+import jmab2.stockmatrix.CapitalGood;
+import jmab2.stockmatrix.ConsumptionGood;
+import jmab2.stockmatrix.Item;
 
 /**
  * @author Alessandro Caiani and Antoine Godin
@@ -122,7 +122,7 @@ public class AtOnceMechanism extends AbstractGoodMechanism implements
 	}
 	
 	/* (non-Javadoc)
-	 * @see jmab.mechanisms.TransactionMechanism#executeTransaction(jmab.agents.GoodDemander, jmab.agents.GoodSupplier, int)
+	 * @see jmab2.mechanisms.TransactionMechanism#executeTransaction(jmab2.agents.GoodDemander, jmab2.agents.GoodSupplier, int)
 	 */
 	/**
 	 * OLD VERSION:
@@ -152,7 +152,7 @@ public class AtOnceMechanism extends AbstractGoodMechanism implements
 	
 
 	/* (non-Javadoc)
-	 * @see jmab.mechanisms.TransactionMechanism#execute(net.sourceforge.jabm.agent.Agent, net.sourceforge.jabm.agent.Agent, int)
+	 * @see jmab2.mechanisms.TransactionMechanism#execute(net.sourceforge.jabm.agent.Agent, net.sourceforge.jabm.agent.Agent, int)
 	 */
 	@Override
 	public void execute(MacroAgent GoodDemander, MacroAgent GoodSupplier, int idMarket) {
@@ -160,7 +160,7 @@ public class AtOnceMechanism extends AbstractGoodMechanism implements
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.mechanisms.Mechanism#execute(jmab.agents.MacroAgent, java.util.List, int)
+	 * @see jmab2.mechanisms.Mechanism#execute(jmab2.agents.MacroAgent, java.util.List, int)
 	 */
 	@Override
 	public void execute(MacroAgent buyer, List<MacroAgent> seller, int idMarket) {

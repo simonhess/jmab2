@@ -12,15 +12,15 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 
-import jmab.agents.AbstractBank;
-import jmab.agents.CreditDemander;
-import jmab.agents.MacroAgent;
-import jmab.population.MacroPopulation;
-import jmab.stockmatrix.Item;
+import jmab2.agents.AbstractBank;
+import jmab2.agents.CreditDemander;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MacroPopulation;
+import jmab2.stockmatrix.Item;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
 
 /**
@@ -38,7 +38,7 @@ public class ExpectedReturnCreditSupply extends AbstractStrategy implements
 	private boolean binaryDecision;
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.SpecificCreditSupplyStrategy#computeSpecificSupply(jmab.agents.MacroAgent, double)
+	 * @see jmab2.strategies.SpecificCreditSupplyStrategy#computeSpecificSupply(jmab2.agents.MacroAgent, double)
 	 */
 	@Override
 	public double computeSpecificSupply(MacroAgent creditDemander,

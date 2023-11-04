@@ -12,14 +12,14 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 
-import jmab.agents.MacroAgent;
-import jmab.expectations.Expectation;
-import jmab.population.MacroPopulation;
-import jmab.stockmatrix.Item;
+import jmab2.agents.MacroAgent;
+import jmab2.expectations.Expectation;
+import jmab2.population.MacroPopulation;
+import jmab2.stockmatrix.Item;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
 
 /**
@@ -41,7 +41,7 @@ public class TargetExpectedInventoriesOutputStrategy extends AbstractStrategy im
 	private int salesExpId;
 	
 	/* (non-Javadoc)
-	 * @see jmab.strategies.ProductionStrategy#computeOutput()
+	 * @see jmab2.strategies.ProductionStrategy#computeOutput()
 	 */
 	@Override
 	public double computeOutput() {

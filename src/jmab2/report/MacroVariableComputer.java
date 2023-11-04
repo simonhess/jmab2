@@ -12,9 +12,9 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.report;
+package jmab2.report;
 
-import jmab.simulations.MacroSimulation;
+import jmab2.simulations.MacroSimulation;
 
 /**
  * @author Alessandro Caiani and Antoine Godin

@@ -12,13 +12,13 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.simulations;
+package jmab2.simulations;
 
 import java.util.List;
 
-import jmab.agents.MacroAgent;
-import jmab.population.MacroPopulation;
-import jmab.population.MarketPopulation;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MacroPopulation;
+import jmab2.population.MarketPopulation;
 import net.sourceforge.jabm.EventScheduler;
 
 /**

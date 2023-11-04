@@ -12,7 +12,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.simulations;
+package jmab2.simulations;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -21,11 +21,11 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.Set;
 
-import jmab.events.MacroTicEvent;
-import jmab.expectations.PassedValues;
-import jmab.init.MacroAgentInitialiser;
-import jmab.population.MacroPopulation;
-import jmab.population.PopulationHandler;
+import jmab2.events.MacroTicEvent;
+import jmab2.expectations.PassedValues;
+import jmab2.init.MacroAgentInitialiser;
+import jmab2.population.MacroPopulation;
+import jmab2.population.PopulationHandler;
 import net.sourceforge.jabm.AbstractSimulation;
 import net.sourceforge.jabm.SimulationTime;
 import net.sourceforge.jabm.agent.Agent;
@@ -103,7 +103,7 @@ MacroSimulation {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MacroSimulation#getActivatedMarketID()
+	 * @see jmab2.simulations.MacroSimulation#getActivatedMarketID()
 	 */
 	@Override
 	public int getActiveMarketId() {
@@ -111,7 +111,7 @@ MacroSimulation {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MacroSimulation#setActivatedMarketID(int)
+	 * @see jmab2.simulations.MacroSimulation#setActivatedMarketID(int)
 	 */
 	@Override
 	public void setActiveMarketId(int activatedMarketId) {
@@ -120,7 +120,7 @@ MacroSimulation {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.simulations.MacroSimulation#getActiveMarket()
+	 * @see jmab2.simulations.MacroSimulation#getActiveMarket()
 	 */
 	@Override
 	public MarketSimulation getActiveMarket() {

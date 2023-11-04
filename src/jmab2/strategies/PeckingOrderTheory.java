@@ -12,14 +12,14 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 import java.util.List;
 
-import jmab.agents.MacroAgent;
-import jmab.population.MacroPopulation;
-import jmab.stockmatrix.Item;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MacroPopulation;
+import jmab2.stockmatrix.Item;
 import net.sourceforge.jabm.strategy.AbstractStrategy;
 
 /**
@@ -34,7 +34,7 @@ public class PeckingOrderTheory extends AbstractStrategy implements
 	int[] stocksId; 
 	
 	/* (non-Javadoc)
-	 * @see jmab.strategies.FinanceStrategy#computeCreditDemand()
+	 * @see jmab2.strategies.FinanceStrategy#computeCreditDemand()
 	 */
 	@Override
 	public double computeCreditDemand(double expectedFinancialRequirement) {

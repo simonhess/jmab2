@@ -12,7 +12,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.agents;
+package jmab2.agents;
 
 import java.math.BigDecimal;
 import java.nio.ByteBuffer;
@@ -21,8 +21,8 @@ import java.util.Collection;
 import java.util.List;
 
 import cern.jet.random.engine.RandomEngine;
-import jmab.population.MacroPopulation;
-import jmab.stockmatrix.Item;
+import jmab2.population.MacroPopulation;
+import jmab2.stockmatrix.Item;
 import net.sourceforge.jabm.agent.Agent;
 import net.sourceforge.jabm.agent.AgentList;
 
@@ -82,7 +82,7 @@ public abstract class AbstractFirm extends SimpleAbstractAgent implements LaborD
 	}
 	
 	/* (non-Javadoc)
-	 * @see jmab.agents.CreditDemander#getLoanLength()
+	 * @see jmab2.agents.CreditDemander#getLoanLength()
 	 */
 	
 	public int decideLoanLength(int idLoanSM) {
@@ -90,7 +90,7 @@ public abstract class AbstractFirm extends SimpleAbstractAgent implements LaborD
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.agents.CreditDemander#getLoanAmortization()
+	 * @see jmab2.agents.CreditDemander#getLoanAmortization()
 	 */
 	
 	public int decideLoanAmortizationType(int idLoanSM) {
@@ -135,7 +135,7 @@ public abstract class AbstractFirm extends SimpleAbstractAgent implements LaborD
 	}
 	
 	/* (non-Javadoc)
-	 * @see jmab.agents.LaborDemander#addEmployee(jmab.agents.LaborSupplier)
+	 * @see jmab2.agents.LaborDemander#addEmployee(jmab2.agents.LaborSupplier)
 	 */
 	public void addEmployee(LaborSupplier worker) {
 		this.laborDemand-=1;

@@ -12,19 +12,19 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.mechanisms;
+package jmab2.mechanisms;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import jmab.agents.CreditDemander;
-import jmab.agents.CreditSupplier;
-import jmab.agents.MacroAgent;
-import jmab.simulations.MarketSimulation;
-import jmab.stockmatrix.Deposit;
-import jmab.stockmatrix.Loan;
+import jmab2.agents.CreditDemander;
+import jmab2.agents.CreditSupplier;
+import jmab2.agents.MacroAgent;
+import jmab2.simulations.MarketSimulation;
+import jmab2.stockmatrix.Deposit;
+import jmab2.stockmatrix.Loan;
 
 /**
  * @author Alessandro Caiani and Antoine Godin
@@ -95,7 +95,7 @@ Mechanism {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.mechanisms.Mechanism#execute(net.sourceforge.jabm.agent.Agent, net.sourceforge.jabm.agent.Agent, int)
+	 * @see jmab2.mechanisms.Mechanism#execute(net.sourceforge.jabm.agent.Agent, net.sourceforge.jabm.agent.Agent, int)
 	 */
 	/**
 	 * This method makes a casting of the MacroAgent to CreditDemander and CreditSupplier and invokes the method
@@ -108,7 +108,7 @@ Mechanism {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.mechanisms.Mechanism#execute(jmab.agents.MacroAgent, java.util.List, int)
+	 * @see jmab2.mechanisms.Mechanism#execute(jmab2.agents.MacroAgent, java.util.List, int)
 	 */
 	@Override
 	public void execute(MacroAgent buyer, List<MacroAgent> seller, int idMarket) {

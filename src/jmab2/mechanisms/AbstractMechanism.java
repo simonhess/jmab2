@@ -12,14 +12,14 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.mechanisms;
+package jmab2.mechanisms;
 
 import java.math.BigDecimal;
 import java.util.List;
 
-import jmab.agents.LiabilitySupplier;
-import jmab.simulations.MarketSimulation;
-import jmab.stockmatrix.Item;
+import jmab2.agents.LiabilitySupplier;
+import jmab2.simulations.MarketSimulation;
+import jmab2.stockmatrix.Item;
 
 /**
  * @author Alessandro Caiani and Antoine Godin
@@ -53,7 +53,7 @@ public abstract class AbstractMechanism implements Mechanism {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.mechanisms.Mechanism#setMarketSimulation(jmab.simulations.MarketSimulation)
+	 * @see jmab2.mechanisms.Mechanism#setMarketSimulation(jmab2.simulations.MarketSimulation)
 	 */
 	@Override
 	public void setMarketSimulation(MarketSimulation market) {
@@ -62,7 +62,7 @@ public abstract class AbstractMechanism implements Mechanism {
 	}
 
 	/* (non-Javadoc)
-	 * @see jmab.mechanisms.Mechanism#getMarketSimulation()
+	 * @see jmab2.mechanisms.Mechanism#getMarketSimulation()
 	 */
 	@Override
 	public MarketSimulation getMarketSimulation() {

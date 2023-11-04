@@ -12,12 +12,12 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  */
-package jmab.strategies;
+package jmab2.strategies;
 
 import java.nio.ByteBuffer;
 
-import jmab.agents.MacroAgent;
-import jmab.population.MacroPopulation;
+import jmab2.agents.MacroAgent;
+import jmab2.population.MacroPopulation;
 
 /**
  * @author Alessandro Caiani and Antoine Godin
@@ -30,7 +30,7 @@ public class DeterministicLogisticLeverageDefaultProbabilityComputer implements
 	private double centerParameter;
 
 	/* (non-Javadoc)
-	 * @see jmab.strategies.DefaultProbilityComputer#getDefaultProbability()
+	 * @see jmab2.strategies.DefaultProbilityComputer#getDefaultProbability()
 	 */
 	@Override
 	public double getDefaultProbability(MacroAgent creditDemander, MacroAgent creditSupplier, double demanded) {
